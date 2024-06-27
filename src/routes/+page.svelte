@@ -1,11 +1,11 @@
 <script lang="ts">
+	import type { Animal } from "$lib/types/Animal"
 	import { Data } from "$lib/data/Data"
 	import { secondsSinceArrival } from "$lib/stores/time"
 	import { numbersSinceArrival } from "$lib/stores/data"
-	import type { Animal } from "$lib/types/Animal"
+	import { secondsToWords } from "$lib/utils/time"
 	import AnimalCounter from "./AnimalCounter.svelte"
 	import RollingNumber from "./RollingNumber.svelte"
-	import { secondsToWords } from "$lib/utils/time";
 
 	const animals: Array<Animal> = sortAnimals()
 
