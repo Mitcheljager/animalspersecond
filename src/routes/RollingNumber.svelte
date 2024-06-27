@@ -8,7 +8,7 @@
   const digits: Array<string> = $derived(number.toString().split(""))
 </script>
 
-<div class="digits" aria-label="{number}%">
+<div class="digits" aria-label="{number}">
   {#each digits as digit, i (digits.length - i)}
     <RollingNumberDigit {digit} />
   {/each}
