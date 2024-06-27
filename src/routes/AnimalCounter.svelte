@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { numbersSinceArrival } from "$lib/stores/data"
 	import { secondsSinceArrival } from "$lib/stores/time"
+	import RollingNumber from "./RollingNumber.svelte"
 
   const {
     index = 0,
@@ -22,5 +23,11 @@
   <h3>{name}</h3>
   <div>{Math.floor(annually).toLocaleString()} {name} killed per year</div>
   <div>{Math.floor(hourly).toLocaleString()} {name} killed per hour</div>
-  <div>{Math.floor(sinceArrival).toLocaleString()} {name} killed since you arrived.</div>
+  <div><RollingNumber number={Math.floor(sinceArrival).toLocaleString()} /> {name} killed since you arrived.</div>
 </div>
+
+<style lang="scss">
+  div {
+    --rolling-number-font-size: 1em;
+  }
+</style>
