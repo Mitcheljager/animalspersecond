@@ -36,24 +36,20 @@
 <h2 class="statement">Let's be better.</h2>
 
 <style lang="scss">
-	$gradient: linear-gradient(30deg, $yellow, darken($yellow, 10%));;
-
 	header {
 		margin: 0 0 clamp(5rem, 20vw, 10rem);
 		color: $yellow;
 	}
 
 	h1 {
+		@include text-gradient($gradient-yellow);
     --rolling-number-font-size: 1em;
 		position: relative;
 		display: inline;
 		margin: 0;
-		background: $gradient;
-		background-clip: text;
 		font-size: clamp(36px, 7.5vw, 120px);
 		font-family: $font-family-brand;
 		font-weight: bold;
-		color: transparent;
 
 		&::before {
 			content: "";
@@ -63,11 +59,12 @@
 			left: 0;
 			width: 100%;
 			height: 1rem;
-			background: $gradient;
+			background: $gradient-yellow;
 		}
   }
 
 	h2 {
+		@include text-gradient($gradient-yellow);
 		margin: 0.75rem 0 0;
 		font-size: clamp(21px, 7.5vw, 28px);
 		font-weight: bold;

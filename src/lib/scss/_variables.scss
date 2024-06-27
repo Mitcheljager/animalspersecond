@@ -1,5 +1,9 @@
+$white: #fff;
+$black: #000;
 $green: #40db59;
 $yellow: #ffcc33;
+
+$gradient-yellow: linear-gradient(30deg, $yellow, darken($yellow, 30%));
 
 $font-family: "Lato", sans-serif;
 $font-family-brand: "Oswald", sans-serif;

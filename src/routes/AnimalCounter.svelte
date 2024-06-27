@@ -41,28 +41,30 @@
   }
 
   .animal {
+    $hover: darken($yellow, 15%);
     --rolling-number-font-size: 1em;
     display: flex;
     gap: 1rem;
     margin: 0 0 1rem;
     border-radius: 0.5rem;
-    box-shadow: 0 0 0 darken($green, 20%);
+    box-shadow: 0 0 0 $hover;
     font-size: 18px;
     line-height: 1.5em;
 
     &:hover {
-      background: darken($green, 20%);
-      box-shadow: 0 0 0 1rem darken($green, 20%);
+      background: $hover;
+      box-shadow: 0 0 0 1rem $hover;
       transition: box-shadow 200ms;
     }
   }
 
-  .icon {
-    filter: invert(1);
-  }
-
   .counter {
+    @include text-gradient($gradient-yellow);
     color: $yellow;
     font-weight: bold;
+
+    .animal:hover & {
+      color: white;
+    }
   }
 </style>
