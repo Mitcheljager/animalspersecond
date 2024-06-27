@@ -4,5 +4,7 @@
 
 <h1>Animals Per Second</h1>
 
+<slot />
+
 <style lang="scss">
 </style>
