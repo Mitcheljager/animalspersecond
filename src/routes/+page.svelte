@@ -5,6 +5,7 @@
 	import type { Animal } from "$lib/types/Animal"
 	import AnimalCounter from "./AnimalCounter.svelte"
 	import RollingNumber from "./RollingNumber.svelte"
+	import { secondsToWords } from "$lib/utils/time";
 
 	const animals: Array<Animal> = sortAnimals()
 
@@ -20,9 +21,9 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-{$secondsSinceArrival}
-
-<h2><RollingNumber number={sum.toLocaleString()} /> Animals killed since you opened this page</h2>
+<h2><RollingNumber number={sum.toLocaleString()} /></h2>
+<h3>That's the number of animals that were killed around the world since you opened the page</h3>
+<p>That was {secondsToWords($secondsSinceArrival)}</p>
 
 {#each animals as animal, index}
 	<AnimalCounter {index} {...animal} />
