@@ -4,7 +4,7 @@
 
 <h4>Sources</h4>
 
-<p><em>Various sources were used for each animal. When numbers differed largely the average was taken, depending on which most sourced seemed to agree on. When ranges were given the lower end of the range was used.</em></p>
+<p><em>Various sources were used for each animal. When numbers differed the average was taken, depending on which most sourced seemed to agree on. When ranges were given the lower end of the range was used.</em></p>
 
 {#each Object.values(Data) as { name, sources }}
   <p>
