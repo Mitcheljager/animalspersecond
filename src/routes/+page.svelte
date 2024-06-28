@@ -32,7 +32,7 @@
 	{/each}
 </div>
 
-<p class="many-more">And so many more...</p>
+<p class="many-more">And so many others...</p>
 
 <div>
 	<h2 class="statement">Let's be better.</h2>
