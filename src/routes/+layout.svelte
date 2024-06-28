@@ -11,6 +11,6 @@
 		position: relative;
 		max-width: 800px;
 		margin: clamp(5rem, 20vw, 10rem) auto;
-		padding: 1rem;
+		padding: 2rem;
 	}
 </style>

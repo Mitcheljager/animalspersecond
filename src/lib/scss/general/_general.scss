@@ -5,4 +5,16 @@ body {
   color: white;
   font-family: $font-family;
   overflow-x: hidden;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: linear-gradient(90deg, transparent, rgba($yellow, 0.5));
+    mask-image: linear-gradient(to bottom, black, transparent);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
 }
