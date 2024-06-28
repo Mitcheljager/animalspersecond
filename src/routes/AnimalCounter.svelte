@@ -60,9 +60,20 @@
     }
   }
 
+  @keyframes wiggle {
+    25% {
+      transform: translateY(-2px) rotate(-3deg);
+    } 50% {
+      transform: translateY(2px) rotate(3deg);
+    } 75% {
+      transform: translateY(-2px) rotate(-3deg);
+    }
+  }
+
   .icon {
     .animal:hover & {
       filter: brightness(100);
+      animation: wiggle 500ms;
     }
   }
 
