@@ -29,7 +29,7 @@
 
     <div>{bigNumberToWords(Math.floor(annually))} per year</div>
     <div>{bigNumberToWords(Math.floor(hourly))} per hour</div>
-    <div class="counter"><RollingNumber number={Math.floor(sinceArrival).toLocaleString()} /> since you arrived</div>
+    <div class="counter"><RollingNumber number={Math.round(sinceArrival).toLocaleString()} /> since you arrived</div>
   </div>
 </div>
 
@@ -55,6 +55,12 @@
       background: $hover;
       box-shadow: 0 0 0 1rem $hover;
       transition: box-shadow 200ms;
+    }
+  }
+
+  .icon {
+    .animal:hover & {
+      filter: brightness(10);
     }
   }
 
