@@ -20,12 +20,12 @@
 		margin: 0 0 $layout-offset;
 		color: $yellow;
     filter:
-      drop-shadow(-0.5rem 3px 2px rgba(0, 0, 0, .1))
-      drop-shadow(-0.5rem 10px 5px rgba(0, 0, 0, .1))
-      drop-shadow(-0.5rem 15px 10px rgba(0, 0, 0, .1))
-      drop-shadow(-0.5rem 25px 15px rgba(0, 0, 0, .2))
-      drop-shadow(-0.5rem 40px 30px rgba(0, 0, 0, .2))
-      drop-shadow(-0.5rem 100px 75px rgba(0, 0, 0, .3));
+      drop-shadow(-0.5rem 3px 2px rgba($black, 0.1))
+      drop-shadow(-0.5rem 10px 5px rgba($black, 0.1))
+      drop-shadow(-0.5rem 15px 10px rgba($black, 0.1))
+      drop-shadow(-0.5rem 25px 15px rgba($black, 0.2))
+      drop-shadow(-0.5rem 40px 30px rgba($black, 0.2))
+      drop-shadow(-0.5rem 100px 75px rgba($black, 0.3));
 	}
 
 	h1 {

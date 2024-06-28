@@ -17,7 +17,7 @@
 </script>
 
 <svelte:head>
-	<title>Animals per second</title>
+	<title>Animals per second | Keeping track of animals killed every second</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 

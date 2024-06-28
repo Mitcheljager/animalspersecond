@@ -20,7 +20,7 @@
 	}
 
 	.logo {
-		$shadow: -0.25rem 3px 2px rgba(0, 0, 0, .05), -0.25rem 10px 5px rgba(0, 0, 0, .05), -0.25rem 15px 10px rgba(0, 0, 0, .05), -0.25rem 25px 15px rgba(0, 0, 0, .1), -0.25rem 40px 30px rgba(0, 0, 0, .1);
+		$shadow: -0.25rem 3px 2px rgba($black, 0.05), -0.25rem 10px 5px rgba($black, 0.05), -0.25rem 15px 10px rgba($black, 0.05), -0.25rem 25px 15px rgba($black, 0.1), -0.25rem 40px 30px rgba($black, 0.1);
 		@include text-gradient($gradient-yellow);
 		display: inline-block;
 		margin-bottom: $layout-offset;
@@ -29,6 +29,7 @@
 		text-decoration: none;
 		box-shadow: 0 3px 0 $yellow, $shadow;
 		text-shadow: $shadow;
+		text-transform: lowercase;
 
 		&:hover {
 			color: white;

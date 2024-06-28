@@ -66,7 +66,7 @@
 
     &:hover,
     &:focus-visible {
-      box-shadow: -0.5rem 1rem 1.5rem 0.5rem rgba($black, 0.25);
+      box-shadow: -0.5rem 3px 2px rgba($black, 0.05), -0.5rem 10px 5px rgba($black, 0.05), -0.5rem 15px 10px rgba($black, 0.05), -0.5rem 25px 15px rgba($black, 0.1), -0.5rem 40px 30px rgba($black, 0.1);
       transform: translateY(-0.5rem) scale(1.05);
       outline: none;
 
