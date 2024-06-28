@@ -15,8 +15,8 @@
 	.layout {
 		position: relative;
 		max-width: 800px;
-		margin: 3rem auto $layout-offset;
-		padding: 0 2rem;
+		margin: clamp(1rem, 5vw, 3rem) auto $layout-offset;
+		padding: 0 1rem;
 	}
 
 	.logo {

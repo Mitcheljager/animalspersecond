@@ -108,6 +108,9 @@
   }
 
   .icon {
+    width: clamp(50px, 20vw, 80px);
+    height: clamp(50px, 20vw, 80px);
+
     filter:
       drop-shadow(-0.5rem 3px 2px rgba(0, 0, 0, .1))
       drop-shadow(-0.5rem 10px 5px rgba(0, 0, 0, .1))
