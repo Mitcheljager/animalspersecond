@@ -29,7 +29,7 @@
 
     <div>{bigNumberToWords(Math.floor(annually))} per year</div>
     <div>{bigNumberToWords(Math.floor(hourly))} per hour</div>
-    <div class="counter"><RollingNumber number={Math.round(sinceArrival).toLocaleString()} /> since you arrived.</div>
+    <div class="counter"><span class="underline"><RollingNumber number={Math.round(sinceArrival).toLocaleString()} /> since you arrived.</span></div>
   </div>
 </div>
 
@@ -38,6 +38,8 @@
     margin: 0 0 0.5rem;
     font-weight: bold;
     color: white;
+    font-size: clamp(20px, 5vw, 24px);
+    font-family: $font-family-brand;
   }
 
   .animal {
@@ -50,6 +52,7 @@
     box-shadow: 0 0 0 $hover;
     font-size: 18px;
     line-height: 1.5em;
+
 
     &:hover {
       background: $hover;
@@ -67,13 +70,15 @@
   .counter {
     @include text-gradient($gradient-yellow);
     display: inline-block;
-    box-shadow: 0 0.2rem 0 $yellow;
     color: $yellow;
     font-weight: bold;
 
     .animal:hover & {
-      box-shadow: 0 0.2rem 0 white;
       color: white;
     }
+  }
+
+  .underline {
+    box-shadow: 0 0.2rem 0 currentColor;
   }
 </style>
