@@ -11,6 +11,7 @@
     slug = "",
     icon = "",
     annually = 0,
+    exclude_from_total = false
   } = $props()
 
   const daily = $derived(annually / 365)
@@ -19,7 +20,7 @@
   const sinceArrival = $derived(secondly * $secondsSinceArrival)
 
   $effect(() => {
-    $numbersSinceArrival[index] = sinceArrival
+    if (!exclude_from_total) $numbersSinceArrival[index] = sinceArrival
   })
 </script>
 

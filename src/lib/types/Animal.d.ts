@@ -4,4 +4,5 @@ export interface Animal {
   annually: number,
   sources: Array<string>,
   description?: string,
+  exclude_from_total?: boolean
 }

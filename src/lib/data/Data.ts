@@ -1,21 +1,22 @@
 import IconChicken from "$lib/images/chicken.svg"
 import IconFish from "$lib/images/fish.svg"
-import IconDuck from "$lib/images/Duck.svg"
-import IconPig from "$lib/images/Pig.svg"
-import IconCow from "$lib/images/Cow.svg"
-import IconSheep from "$lib/images/Sheep.svg"
-import IconRabbit from "$lib/images/Rabbit.svg"
-import IconTurkey from "$lib/images/Turkey.svg"
-import IconGoose from "$lib/images/Goose.svg"
-import IconGoat from "$lib/images/Goat.svg"
-import IconBuffalo from "$lib/images/Buffalo.svg"
-import IconCamel from "$lib/images/Camel.svg"
-import IconPigeon from "$lib/images/Pigeon.svg"
-import IconHorse from "$lib/images/Horse.svg"
-import IconDeer from "$lib/images/Deer.svg"
-import IconKangaroo from "$lib/images/Kangaroo.svg"
-import IconDog from "$lib/images/Dog.svg"
-import IconRodent from "$lib/images/Rodent.svg"
+import IconDuck from "$lib/images/duck.svg"
+import IconPig from "$lib/images/pig.svg"
+import IconCow from "$lib/images/cow.svg"
+import IconSheep from "$lib/images/sheep.svg"
+import IconRabbit from "$lib/images/rabbit.svg"
+import IconTurkey from "$lib/images/turkey.svg"
+import IconGoose from "$lib/images/goose.svg"
+import IconGoat from "$lib/images/goat.svg"
+import IconBuffalo from "$lib/images/buffalo.svg"
+import IconCamel from "$lib/images/camel.svg"
+import IconPigeon from "$lib/images/pigeon.svg"
+import IconHorse from "$lib/images/horse.svg"
+import IconDeer from "$lib/images/deer.svg"
+import IconKangaroo from "$lib/images/kangaroo.svg"
+import IconDog from "$lib/images/dog.svg"
+import IconRodent from "$lib/images/rodent.svg"
+import IconShark from "$lib/images/shark.svg"
 
 export const Data = {
   Chicken: {
@@ -147,14 +148,6 @@ export const Data = {
     sources: [],
     description: ``
   },
-  Kangaroo: {
-    name: "Kangaroos",
-    slug: "kangaroos",
-    icon: IconKangaroo,
-    annually: 3_000_000,
-    sources: [],
-    description: ``
-  },
   Dog: {
     name: "Dogs",
     slug: "dogs",
@@ -171,4 +164,13 @@ export const Data = {
     sources: [],
     description: ``
   },
+  Shark: {
+    name: "Sharks",
+    slug: "sharks",
+    icon: IconShark,
+    annually: 80_000_000,
+    exclude_from_total: true,
+    sources: ["https://www.science.org/doi/10.1126/science.adf8984", "https://www.greenpeace.org/international/story/46967/100-million-dead-sharks-its-not-all-about-shark-fin-soup/", "https://www.eoceans.org/sharks-and-rays/100-million-sharks-killed-each-year", "https://www.smithsonianmag.com/smart-news/sharks-are-being-killed-at-rising-rates-despite-increased-regulations-180983593/"],
+    description: ``
+  }
 }
