@@ -1,20 +1,18 @@
 <script lang="ts">
 	import { secondsSinceArrival } from '$lib/stores/time'
-	import { bigNumberToWords } from '$lib/utils/number';
+	import { bigNumberToWords } from '$lib/utils/number'
+	import { capitalizeFirstLetter } from '$lib/utils/text';
 	import { secondsToWords } from '$lib/utils/time'
 	import Header from '../Header.svelte'
 
-  const {
-    data
-  } = $props()
-
+  const { data } = $props()
   const { name, annually, description } = $derived(data)
 
   const sinceArrival = $derived(Math.round(annually / 365 / 24 / 60 / 60 * $secondsSinceArrival))
 </script>
 
 <svelte:head>
-	<title>{name} killed per second</title>
+	<title>{capitalizeFirstLetter(bigNumberToWords(annually))} {name.toLowerCase()} are killed every year</title>
 </svelte:head>
 
 <Header number={sinceArrival.toLocaleString()}>
