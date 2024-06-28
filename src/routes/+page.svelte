@@ -72,6 +72,7 @@
 		color: $yellow;
 		font-family: $font-family-brand;
 		letter-spacing: 2px;
+		font-weight: normal;
   }
 
 	p {

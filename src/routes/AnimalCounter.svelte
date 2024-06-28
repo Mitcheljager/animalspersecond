@@ -40,6 +40,7 @@
     color: white;
     font-size: clamp(20px, 5vw, 21px);
     font-family: $font-family-brand;
+    font-weight: normal;
   }
 
   .animal {
