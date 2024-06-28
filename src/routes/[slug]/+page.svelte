@@ -7,12 +7,12 @@
     data
   } = $props()
 
-  const { name, annually } = $derived(data)
+  const { name, annually, slug } = $derived(data)
 
   const sinceArrival = $derived(Math.round(annually / 365 / 24 / 60 / 60 * $secondsSinceArrival))
 </script>
 
-<Header number={`${sinceArrival.toLocaleString()} ${name}`}>
+<Header number={`${sinceArrival.toLocaleString()} ${slug}`}>
 	<h2>That's the number of {name.toLowerCase()} that were killed globally since you opened this website.</h2>
 	<p><em>That was {secondsToWords($secondsSinceArrival)}</em></p>
 </Header>

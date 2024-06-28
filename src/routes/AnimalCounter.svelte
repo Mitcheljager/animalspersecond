@@ -8,6 +8,7 @@
   const {
     index = 0,
     name = "",
+    slug = "",
     icon = "",
     annually = 0,
   } = $props()
@@ -22,7 +23,7 @@
   })
 </script>
 
-<a href="/{toSlug(name)}" class="animal">
+<a href="/{slug}" class="animal">
   <img class="icon" loading="lazy" src={icon} alt="" width="80" height="80" />
 
   <div class="content">

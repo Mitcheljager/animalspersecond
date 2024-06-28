@@ -30,6 +30,7 @@
 		font-size: clamp(36px, 12vw, 120px);
 		font-family: $font-family-brand;
 		font-weight: bold;
+    text-transform: uppercase;
 
 		&::before {
 			content: "";
