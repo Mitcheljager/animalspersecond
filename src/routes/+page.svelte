@@ -47,7 +47,7 @@
 		position: relative;
 		display: inline;
 		margin: 0;
-		font-size: clamp(36px, 7.5vw, 120px);
+		font-size: clamp(36px, 12vw, 120px);
 		font-family: $font-family-brand;
 		font-weight: bold;
 
@@ -58,7 +58,7 @@
 			bottom: 0;
 			left: 0;
 			width: 100%;
-			height: 1rem;
+			height: clamp(0.25rem, 1vw, 1rem);
 			background: $gradient-yellow;
 		}
   }
@@ -66,7 +66,7 @@
 	h2 {
 		@include text-gradient($gradient-yellow);
 		margin: 0.75rem 0 0;
-		font-size: clamp(21px, 7.5vw, 28px);
+		font-size: clamp(21px, 4vw, 28px);
 		font-weight: bold;
 		color: $yellow;
 		font-family: $font-family-brand;
@@ -79,8 +79,11 @@
 
 	.animals {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
 		gap: 3rem;
+
+		@media (min-width: 768px) {
+			grid-template-columns: 1fr 1fr;
+		}
 	}
 
 	.statement {
