@@ -14,6 +14,8 @@ import IconPigeon from "$lib/images/Pigeon.svg"
 import IconHorse from "$lib/images/Horse.svg"
 import IconDeer from "$lib/images/Deer.svg"
 import IconKangaroo from "$lib/images/Kangaroo.svg"
+import IconDog from "$lib/images/Dog.svg"
+import IconRodent from "$lib/images/Rodent.svg"
 
 export const Data = {
   Chicken: {
@@ -95,5 +97,15 @@ export const Data = {
     name: "Kangaroos",
     icon: IconKangaroo,
     annually: 3_000_000
+  },
+  Dog: {
+    name: "Dogs",
+    icon: IconDog,
+    annually: 25_000_000
+  },
+  Rodent: {
+    name: "Rodents",
+    icon: IconRodent,
+    annually: 70_000_000
   },
 }
