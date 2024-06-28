@@ -17,7 +17,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Animals per second</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
@@ -73,7 +73,7 @@
 
 	.statement {
 		display: inline-block;
-		margin: clamp(5rem, 20vw, 10rem) 0 0;
+		margin: $layout-offset 0 0;
 		box-shadow: 0 0.2rem $yellow;
 	}
 </style>

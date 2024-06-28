@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { secondsSinceArrival } from '$lib/stores/time'
+	import { bigNumberToWords } from '$lib/utils/number';
 	import { secondsToWords } from '$lib/utils/time'
 	import Header from '../Header.svelte'
 
@@ -22,6 +23,7 @@
 </Header>
 
 <div class="description">
+  <p>Around {bigNumberToWords(annually)} {name.toLowerCase()} are killed each year.<p>
   {@html description}
 </div>
 

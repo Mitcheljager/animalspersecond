@@ -17,7 +17,7 @@
 
 <style lang="scss">
   header {
-		margin: 0 0 clamp(5rem, 20vw, 10rem);
+		margin: 0 0 $layout-offset;
 		color: $yellow;
 	}
 

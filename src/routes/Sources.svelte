@@ -18,7 +18,7 @@
 
 <style lang="scss">
   h4 {
-    margin: clamp(5rem, 20vw, 10rem) 0 0;
+    margin: $layout-offset 0 0;
   }
 
   p {
