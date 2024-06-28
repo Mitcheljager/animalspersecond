@@ -150,6 +150,10 @@
     font-size: 1rem;
     cursor: pointer;
 
+    &:hover {
+      box-shadow: 0 0.2rem 0 white;
+    }
+
     .animal:hover &,
     .animal:focus-visible & {
       color: white;
