@@ -33,7 +33,11 @@
 	{/each}
 </div>
 
-<h2 class="statement">Let's be better.</h2>
+<p class="many-more">And so many more...</p>
+
+<div>
+	<h2 class="statement">Let's be better.</h2>
+</div>
 
 <style lang="scss">
 	header {
@@ -86,6 +90,14 @@
 		@media (min-width: 768px) {
 			grid-template-columns: 1fr 1fr;
 		}
+	}
+
+	.many-more {
+		display: inline-block;
+		margin: 3rem 0 0;
+		font-family: $font-family-brand;
+		font-size: clamp(18px, 4vw, 19px);
+		color: $yellow;
 	}
 
 	.statement {
