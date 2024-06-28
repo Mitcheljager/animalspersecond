@@ -4,9 +4,13 @@
   } = $props()
 </script>
 
-<div class="wrapper" style:--digit={digit}>
+<div class="wrapper" style:--digit={isNaN(parseInt(digit)) ? 0 : digit}>
   {#if isNaN(parseInt(digit))}
-    {digit}
+    {#if digit === " "}
+      &nbsp;
+    {:else}
+      {digit}
+    {/if}
   {:else}
     {#each { length: 10 } as _, i}
       <div class="digit" class:active={i.toString() === digit}>{i}</div>

@@ -1,12 +1,12 @@
 <script lang="ts">
-	import type { Animal } from "$lib/types/Animal"
+	import type { Animal } from "$lib/types/Animal.d.ts"
 	import { Data } from "$lib/data/Data"
 	import { secondsSinceArrival } from "$lib/stores/time"
 	import { numbersSinceArrival } from "$lib/stores/data"
 	import { secondsToWords } from "$lib/utils/time"
 	import AnimalCounter from "./AnimalCounter.svelte"
-	import RollingNumber from "./RollingNumber.svelte"
-	import Sources from "./Sources.svelte";
+	import Sources from "./Sources.svelte"
+	import Header from "./Header.svelte"
 
 	const animals: Array<Animal> = sortAnimals()
 
@@ -22,11 +22,10 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<header>
-	<h1><RollingNumber number={sum.toLocaleString()} /></h1>
-	<h2>That's the number of animals that were killed globally since you opened this page.</h2>
+<Header number={sum.toLocaleString()}>
+	<h2>That's the number of animals that were killed globally since you opened this website.</h2>
 	<p><em>That was {secondsToWords($secondsSinceArrival)}</em></p>
-</header>
+</Header>
 
 <div class="animals">
 	{#each animals as animal, index}
@@ -43,34 +42,6 @@
 <Sources />
 
 <style lang="scss">
-	header {
-		margin: 0 0 clamp(5rem, 20vw, 10rem);
-		color: $yellow;
-	}
-
-	h1 {
-		@include text-gradient($gradient-yellow);
-    --rolling-number-font-size: 1em;
-		position: relative;
-		display: inline;
-		margin: 0;
-		font-size: clamp(36px, 12vw, 120px);
-		font-family: $font-family-brand;
-		font-weight: bold;
-
-		&::before {
-			content: "";
-			display: block;
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			border-radius: 1rem;
-			height: clamp(0.25rem, 1vw, 1rem);
-			background: $gradient-yellow;
-		}
-  }
-
 	h2 {
 		@include text-gradient($gradient-yellow);
 		margin: 0.75rem 0 0;

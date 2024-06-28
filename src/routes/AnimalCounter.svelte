@@ -2,6 +2,7 @@
 	import { numbersSinceArrival } from "$lib/stores/data"
 	import { secondsSinceArrival } from "$lib/stores/time"
 	import { bigNumberToWords } from "$lib/utils/number"
+	import { toSlug } from "$lib/utils/route";
 	import RollingNumber from "./RollingNumber.svelte"
 
   const {
@@ -21,17 +22,19 @@
   })
 </script>
 
-<div class="animal">
+<a href="/{toSlug(name)}" class="animal">
   <img class="icon" loading="lazy" src={icon} alt="" width="80" height="80" />
 
-  <div>
+  <div class="content">
     <h3>{name}</h3>
 
     <div>{bigNumberToWords(Math.floor(annually))} per year</div>
     <div>{bigNumberToWords(Math.floor(hourly))} per hour</div>
     <div class="counter"><span class="underline"><RollingNumber number={Math.round(sinceArrival).toLocaleString()} /> since you arrived.</span></div>
+
+    <button class="button">Tell me more</button>
   </div>
-</div>
+</a>
 
 <style lang="scss">
   h3 {
@@ -52,12 +55,20 @@
     box-shadow: 0 0 0 $hover;
     font-size: 16px;
     line-height: 1.5em;
+    text-decoration: none;
+    color: $white;
 
     &:hover {
       background: $hover;
       box-shadow: 0 0 0 1rem $hover;
       transition: box-shadow 200ms;
     }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   @keyframes wiggle {
@@ -91,5 +102,22 @@
 
   .underline {
     box-shadow: 0 0.2rem 0 currentColor;
+  }
+
+  .button {
+    appearance: none;
+    padding: 0;
+    margin-top: 0.5rem;
+    border: 0;
+    background: transparent;
+    color: $yellow;
+    font-family: $font-family-brand;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+
+    .animal:hover & {
+      color: white;
+    }
   }
 </style>
