@@ -5,7 +5,6 @@
 	import { numbersSinceArrival } from "$lib/stores/data"
 	import { secondsToWords } from "$lib/utils/time"
 	import AnimalCounter from "./AnimalCounter.svelte"
-	import Sources from "./Sources.svelte"
 	import Header from "./Header.svelte"
 
 	const animals: Array<Animal> = sortAnimals()
@@ -38,8 +37,6 @@
 <div>
 	<h2 class="statement">Let's be better.</h2>
 </div>
-
-<Sources />
 
 <style lang="scss">
 	h2 {
@@ -76,7 +73,7 @@
 
 	.statement {
 		display: inline-block;
-		margin: clamp(5rem, 20vw, 10rem) 0;
+		margin: clamp(5rem, 20vw, 10rem) 0 0;
 		box-shadow: 0 0.2rem $yellow;
 	}
 </style>

@@ -1,9 +1,12 @@
 <script>
 	import "$lib/scss/app.scss"
+	import Sources from "./Sources.svelte"
 </script>
 
 <div class="layout">
 	<slot />
+
+	<Sources />
 </div>
 
 <style lang="scss">
