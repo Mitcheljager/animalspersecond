@@ -66,10 +66,13 @@
 
   .counter {
     @include text-gradient($gradient-yellow);
+    display: inline-block;
+    box-shadow: 0 0.2rem 0 $yellow;
     color: $yellow;
     font-weight: bold;
 
     .animal:hover & {
+      box-shadow: 0 0.2rem 0 white;
       color: white;
     }
   }

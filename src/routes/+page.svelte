@@ -58,6 +58,7 @@
 			bottom: 0;
 			left: 0;
 			width: 100%;
+			border-radius: 1rem;
 			height: clamp(0.25rem, 1vw, 1rem);
 			background: $gradient-yellow;
 		}
