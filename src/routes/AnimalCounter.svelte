@@ -22,7 +22,7 @@
 </script>
 
 <div class="animal">
-  <img class="icon" src={icon} alt="" width="80" height="80" />
+  <img class="icon" loading="lazy" src={icon} alt="" width="80" height="80" />
 
   <div>
     <h3>{name}</h3>
