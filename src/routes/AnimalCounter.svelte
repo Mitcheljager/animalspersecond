@@ -50,24 +50,44 @@
     $hover: darken($yellow, 15%);
     --rolling-number-font-size: 1em;
     display: flex;
+    position: relative;
     gap: 1rem;
-    margin: 0 0 1rem;
+    padding: 1rem;
     border-radius: 0.5rem;
-    box-shadow: 0 0 0 $hover;
+    box-shadow: 0 0 0 transparent;
     font-size: 16px;
     line-height: 1.5em;
     text-decoration: none;
     color: $white;
 
+    @media (prefers-reduced-motion: no-preference) {
+      transition: box-shadow 150ms, transform 150ms, background-color 150ms;
+    }
+
     &:hover,
     &:focus-visible {
-      background: $hover;
-      box-shadow: 0 0 0 1rem $hover;
+      box-shadow: -0.5rem 1rem 1.5rem 0.5rem rgba($black, 0.25);
+      transform: translateY(-0.5rem) scale(1.05);
       outline: none;
 
-      @media (prefers-reduced-motion: no-preference) {
-        transition: box-shadow 200ms;
+      &::before {
+        opacity: 0.75;
       }
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+      background: $gradient-yellow;
+      opacity: 0.1;
+      z-index: -1;
+      transition: opacity 100ms;
     }
   }
 
@@ -88,6 +108,11 @@
   }
 
   .icon {
+    filter:
+      drop-shadow(-0.5rem 3px 2px rgba(0, 0, 0, .1))
+      drop-shadow(-0.5rem 10px 5px rgba(0, 0, 0, .1))
+      drop-shadow(-0.5rem 15px 10px rgba(0, 0, 0, .1));
+
     .animal:hover &,
     .animal:focus-visible & {
       filter: brightness(100);

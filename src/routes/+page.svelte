@@ -56,7 +56,7 @@
 
 	.animals {
 		display: grid;
-		gap: 3rem;
+		gap: 1rem;
 
 		@media (min-width: 768px) {
 			grid-template-columns: 1fr 1fr;
@@ -65,7 +65,7 @@
 
 	.many-more {
 		display: inline-block;
-		margin: 3rem 0 0;
+		margin: 1rem 0 0;
 		font-family: $font-family-brand;
 		font-size: clamp(18px, 4vw, 19px);
 		color: $yellow;

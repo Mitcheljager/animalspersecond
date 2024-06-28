@@ -20,16 +20,19 @@
 	}
 
 	.logo {
+		$shadow: -0.25rem 3px 2px rgba(0, 0, 0, .05), -0.25rem 10px 5px rgba(0, 0, 0, .05), -0.25rem 15px 10px rgba(0, 0, 0, .05), -0.25rem 25px 15px rgba(0, 0, 0, .1), -0.25rem 40px 30px rgba(0, 0, 0, .1);
+		@include text-gradient($gradient-yellow);
 		display: inline-block;
 		margin-bottom: $layout-offset;
 		font-family: $font-family-brand;
-		color: $yellow;
 		font-size: 21px;
 		text-decoration: none;
-		box-shadow: 0 3px 0 currentColor;
+		box-shadow: 0 3px 0 $yellow, $shadow;
+		text-shadow: $shadow;
 
 		&:hover {
 			color: white;
+
 		}
 	}
 </style>
