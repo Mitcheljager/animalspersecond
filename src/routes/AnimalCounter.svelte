@@ -36,7 +36,6 @@
 <style lang="scss">
   h3 {
     margin: 0 0 0.5rem;
-    font-weight: bold;
     color: white;
     font-size: clamp(20px, 5vw, 21px);
     font-family: $font-family-brand;
@@ -51,9 +50,8 @@
     margin: 0 0 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 0 0 $hover;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5em;
-
 
     &:hover {
       background: $hover;
@@ -72,7 +70,8 @@
     @include text-gradient($gradient-yellow);
     display: inline-block;
     color: $yellow;
-    font-weight: bold;
+    font-family: $font-family-brand;
+    font-size: 18px;
 
     .animal:hover & {
       color: white;
