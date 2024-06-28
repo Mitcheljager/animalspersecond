@@ -59,7 +59,8 @@
     text-decoration: none;
     color: $white;
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
       background: $hover;
       box-shadow: 0 0 0 1rem $hover;
       transition: box-shadow 200ms;
@@ -83,7 +84,8 @@
   }
 
   .icon {
-    .animal:hover & {
+    .animal:hover &,
+    .animal:focus-visible & {
       filter: brightness(100);
       animation: wiggle 500ms;
     }
@@ -96,7 +98,8 @@
     font-family: $font-family-brand;
     font-size: 18px;
 
-    .animal:hover & {
+    .animal:hover &,
+    .animal:focus-visible & {
       color: white;
     }
   }
@@ -117,7 +120,8 @@
     font-size: 1rem;
     cursor: pointer;
 
-    .animal:hover & {
+    .animal:hover &,
+    .animal:focus-visible & {
       color: white;
     }
   }
