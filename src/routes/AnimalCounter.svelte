@@ -38,7 +38,7 @@
     margin: 0 0 0.5rem;
     font-weight: bold;
     color: white;
-    font-size: clamp(20px, 5vw, 24px);
+    font-size: clamp(20px, 5vw, 21px);
     font-family: $font-family-brand;
   }
 
