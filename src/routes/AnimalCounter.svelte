@@ -62,7 +62,7 @@
 
   .icon {
     .animal:hover & {
-      filter: brightness(10);
+      filter: brightness(100);
     }
   }
 
