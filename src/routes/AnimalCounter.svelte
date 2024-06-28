@@ -63,7 +63,11 @@
     &:focus-visible {
       background: $hover;
       box-shadow: 0 0 0 1rem $hover;
-      transition: box-shadow 200ms;
+      outline: none;
+
+      @media (prefers-reduced-motion: no-preference) {
+        transition: box-shadow 200ms;
+      }
     }
   }
 
@@ -87,7 +91,10 @@
     .animal:hover &,
     .animal:focus-visible & {
       filter: brightness(100);
-      animation: wiggle 500ms;
+
+      @media (prefers-reduced-motion: no-preference) {
+        animation: wiggle 500ms;
+      }
     }
   }
 
