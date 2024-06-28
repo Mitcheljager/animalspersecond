@@ -2,7 +2,6 @@
 	import { numbersSinceArrival } from "$lib/stores/data"
 	import { secondsSinceArrival } from "$lib/stores/time"
 	import { bigNumberToWords } from "$lib/utils/number"
-	import { toSlug } from "$lib/utils/route";
 	import RollingNumber from "./RollingNumber.svelte"
 
   const {

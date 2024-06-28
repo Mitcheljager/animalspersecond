@@ -1,9 +1,7 @@
 <script lang="ts">
 	import RollingNumberDigit from "./RollingNumberDigit.svelte"
 
-  const {
-    number = ""
-  } = $props()
+  const { number = "" } = $props()
 
   const digits: Array<string> = $derived(number.toString().split(""))
 </script>

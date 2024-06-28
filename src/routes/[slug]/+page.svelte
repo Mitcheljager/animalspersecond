@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { secondsSinceArrival } from '$lib/stores/time'
-	import { bigNumberToWords } from '$lib/utils/number'
-	import { capitalizeFirstLetter } from '$lib/utils/text';
-	import { secondsToWords } from '$lib/utils/time'
-	import Header from '../Header.svelte'
+	import { secondsSinceArrival } from "$lib/stores/time"
+	import { bigNumberToWords } from "$lib/utils/number"
+	import { capitalizeFirstLetter } from "$lib/utils/text";
+	import { secondsToWords } from "$lib/utils/time"
+	import Header from "../Header.svelte"
 
   const { data } = $props()
   const { name, annually, description } = $derived(data)
@@ -16,7 +16,7 @@
 </svelte:head>
 
 <Header number={sinceArrival.toLocaleString()}>
-	<h2>That's the number of {name.toLowerCase()} that were killed globally since you opened this website.</h2>
+	<h2>That"s the number of {name.toLowerCase()} that were killed globally since you opened this website.</h2>
 	<p><em>That was {secondsToWords($secondsSinceArrival)}</em></p>
 </Header>
 

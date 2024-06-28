@@ -1,7 +1,5 @@
 <script>
-	const {
-    digit = ""
-  } = $props()
+	const { digit = "" } = $props()
 </script>
 
 <div class="wrapper" style:--digit={isNaN(parseInt(digit)) ? 0 : digit}>
