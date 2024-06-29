@@ -64,5 +64,6 @@
 		display: inline-block;
 		margin: $layout-offset 0 0;
 		box-shadow: 0 0.2rem $yellow;
+		color: $yellow;
 	}
 </style>
