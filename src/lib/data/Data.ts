@@ -23,7 +23,7 @@ export const Data = {
     slug: "chickens",
     icon: IconChicken,
     annually: 70_000_000_000,
-    sources: [],
+    sources: ["https://www.biologicaldiversity.org/takeextinctionoffyourplate/pdfs/ChickenFactsheet.pdf", "https://epar.evans.uw.edu/research/environmental-implications-livestock-chickens", "https://ourworldindata.org/how-many-animals-get-slaughtered-every-day", "https://www.al.org.au/how-many-chickens-die-every-year"],
     description: `
       <p>Chickens are farmed primarily for consumption.</p>
       <p>Chickens meant for consumption are bred to get as large as possible as fast as possible. This often leads to severe health problems such as skeletal deforminities, organ failure, and intense pain. They are typically killed after just 5 to 7 weeks old, after living a short live in overcrowded and stressful conditions.</p>
