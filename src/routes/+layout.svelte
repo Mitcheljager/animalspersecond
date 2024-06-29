@@ -20,7 +20,7 @@
 	}
 
 	.logo {
-		$shadow: -0.25rem 3px 2px rgba($black, 0.05), -0.25rem 10px 5px rgba($black, 0.05), -0.25rem 15px 10px rgba($black, 0.05), -0.25rem 25px 15px rgba($black, 0.1), -0.25rem 40px 30px rgba($black, 0.1);
+		$shadow: -0.25rem 3px 2px rgba($black, 0.05), -0.5rem 10px 5px rgba($black, 0.05), -0.75rem 15px 10px rgba($black, 0.05), -1rem 25px 15px rgba($black, 0.1), -1.25rem 40px 30px rgba($black, 0.1);
 		@include text-gradient($gradient-yellow);
 		display: inline-block;
 		margin-bottom: $layout-offset;
