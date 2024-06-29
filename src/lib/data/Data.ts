@@ -42,8 +42,13 @@ export const Data = {
     slug: "fish",
     icon: IconFish,
     annually: 1_500_000_000_000,
-    sources: [],
-    description: ``
+    sources: ["https://www.nationalgeographic.com/science/article/global-industrial-fishing-footprint-spd", "https://www.worldwildlife.org/threats/overfishing", "https://www.pewtrusts.org/en/research-and-analysis/issue-briefs/2022/11/more-than-100000-fishing-related-deaths-occur-each-year-study-finds"],
+    description: `
+      <p>Fishing is primarily done in the open ocean, rather than farms. Nets are cast and will catch anything caught within them. Many of the fish caught are not intended to be caught, including dolphins, turtles, and even seabirds, causing unnecessary harm. But even the fish that were intended to be caught suffer in droves. The fish are all squished together in the net the fish and up suffocating. Those that are not killed by suffocation are brought to the surface and end up dying due to a lack of water. In either case the animals end up dying a slow and painful death.</p>
+
+      <h3>Destruction of coral reefs</h3>
+      <p>As fishing nets drag across the ocean floor they destroy critical habitats such as coral reefs and seagrass beds. These habitats are essentially for reproduction and survival of many ocean animals. Coral reefs are crucial in sustaining life all across the earth, providing places to live, feed, and procreate. Additionally, they are vital in reducing the effects of climate, acting as carbon sinks. Reefs even protect coastlines from erosion. With their destruction climate change will worsen, killing even more in the process.</p>
+    `
   },
   Pig: {
     name: "Pigs",
