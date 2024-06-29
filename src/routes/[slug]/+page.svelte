@@ -16,7 +16,7 @@
 </svelte:head>
 
 <Header number={sinceArrival.toLocaleString()}>
-	<h2>That"s the number of {name.toLowerCase()} that were killed globally since you opened this website.</h2>
+	<h2>That's the number of {name.toLowerCase()} that were killed globally since you opened this website.</h2>
 	<p><em>That was {secondsToWords($secondsSinceArrival)}</em></p>
 </Header>
 
@@ -27,7 +27,7 @@
 
 <style lang="scss">
   .description {
-    font-size: 18px;
+    font-size: clamp(18px, 3vw, 21px);
     line-height: 1.65em;
 
     :global(h3) {

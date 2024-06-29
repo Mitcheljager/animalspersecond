@@ -26,6 +26,15 @@
       drop-shadow(-2rem 25px 15px rgba($black, 0.2))
       drop-shadow(-2.5rem 40px 30px rgba($black, 0.2))
       drop-shadow(-3rem 100px 75px rgba($black, 0.3));
+
+		:global(h2) {
+			margin: 2rem 0 0;
+			font-size: clamp(21px, 5vw, 24px);
+		}
+
+		:global(p) {
+			margin: 1rem 0;
+		}
 	}
 
 	h1 {
