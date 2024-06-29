@@ -40,7 +40,7 @@
 
 <style lang="scss">
 	p {
-		margin: 0.75rem 0 0;
+		margin: 1rem 0 0;
 	}
 
 	.animals {

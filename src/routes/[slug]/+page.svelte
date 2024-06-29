@@ -35,4 +35,8 @@
       color: $yellow;
     }
   }
+
+  p {
+    margin: 1rem 0;
+  }
 </style>
