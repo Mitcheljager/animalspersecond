@@ -48,6 +48,9 @@ export const Data = {
 
       <h3>Destruction of coral reefs</h3>
       <p>As fishing nets drag across the ocean floor they destroy critical habitats such as coral reefs and seagrass beds. These habitats are essentially for reproduction and survival of many ocean animals. Coral reefs are crucial in sustaining life all across the earth, providing places to live, feed, and procreate. Additionally, they are vital in reducing the effects of climate, acting as carbon sinks. Reefs even protect coastlines from erosion. With their destruction climate change will worsen, killing even more in the process.</p>
+
+      <h3>Ocean trash</h3>
+      <p>A large percentage of the ocean's trash is as the direct result of fishing. Fishing boats leave behind their nets, supplies, and more, all resulting in large amount of trash. This trash ends up killing all sorts of marine life through suffocation, digestion of the trash, or from getting stuck.</p>
     `
   },
   Pig: {
