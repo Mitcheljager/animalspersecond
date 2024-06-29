@@ -22,7 +22,7 @@
 </svelte:head>
 
 <Header number={sum.toLocaleString()}>
-	<h2>That's the number of animals that were killed globally since you opened this website.</h2>
+	{#snippet subtitle()}That's the number of animals that were killed globally since you opened this website.{/snippet}
 	<p><em>That was {secondsToWords($secondsSinceArrival)}</em></p>
 </Header>
 
@@ -39,17 +39,6 @@
 </div>
 
 <style lang="scss">
-	h2 {
-		@include text-gradient($gradient-yellow);
-		margin: 0.75rem 0 0;
-		font-size: clamp(21px, 4vw, 28px);
-		font-weight: bold;
-		color: $yellow;
-		font-family: $font-family-brand;
-		letter-spacing: 2px;
-		font-weight: normal;
-  }
-
 	p {
 		margin: 0.75rem 0 0;
 	}

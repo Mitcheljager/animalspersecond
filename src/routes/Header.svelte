@@ -3,15 +3,17 @@
   import RollingNumber from "./RollingNumber.svelte"
 
   interface Props {
-    number: string
+    number: string,
+		subtitle: Snippet,
     children: Snippet
   }
 
-  const { number, children } : Props = $props()
+  const { number, subtitle, children } : Props = $props()
 </script>
 
 <header>
 	<h1><RollingNumber {number} /></h1>
+	<h2>{@render subtitle()}</h2>
 	{@render children()}
 </header>
 
@@ -26,11 +28,6 @@
       drop-shadow(-2rem 25px 15px rgba($black, 0.2))
       drop-shadow(-2.5rem 40px 30px rgba($black, 0.2))
       drop-shadow(-3rem 100px 75px rgba($black, 0.3));
-
-		:global(h2) {
-			margin: 2rem 0 0;
-			font-size: clamp(21px, 5vw, 24px);
-		}
 
 		:global(p) {
 			margin: 1rem 0;
@@ -60,4 +57,16 @@
 			background: $gradient-yellow;
 		}
   }
+
+	h2 {
+		@include text-gradient($gradient-yellow);
+		margin: 0.75rem 0 0;
+		font-size: clamp(21px, 4vw, 28px);
+		font-weight: bold;
+		color: $yellow;
+		font-family: $font-family-brand;
+		letter-spacing: 2px;
+		font-weight: normal;
+		font-size: clamp(21px, 5vw, 24px);
+	}
 </style>
