@@ -3,6 +3,6 @@ export interface Animal {
   slug: string,
   annually: number,
   sources: Array<string>,
-  description?: string,
+  description: string,
   exclude_from_total?: boolean
 }

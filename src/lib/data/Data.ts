@@ -26,14 +26,15 @@ export const Data = {
     sources: [],
     description: `
       <p>Chickens are farmed primarily for consumption.</p>
-      <p>Broiler chickens are bred for rapid growth, often leading to severe health problems such as skeletal deformities, organ failure, and chronic pain. These chickens are typically slaughtered at just 5 to 7 weeks old, having lived short lives in overcrowded and stressful conditions. Layer hens, bred for egg production, are confined to battery cages or crowded barns, with limited space to move and engage in natural behaviors.</p>
-      <p>Chicken farming primarily involves female chickens. The practice of culling male chicks shortly after hatching results in the deaths of billions of chicks annually.</p>
+      <p>Chickens meant for consumption are bred to get as large as possible as fast as possible. This often leads to severe health problems such as skeletal deforminities, organ failure, and intense pain. They are typically killed after just 5 to 7 weeks old, after living a short live in overcrowded and stressful conditions.</p>
+      <p>Egg laying chickens are often kept in battery cages or crowded barns, with limited space to move. They are bred in a way that forces them to produce a new egg almost daily, where as more naturally developed chickens only lay 10 to 15 eggs per year.</p>
+      <p>Chicken farming primarily involves female chickens. The practice of killing male chicks shortly after hatching results in the deaths of billions of chicks annually.</p>
 
       <h3>Environmental impact</h3>
-      <p>The environmental footprint of chicken farming is significant. Large-scale operations generate substantial amounts of waste, contributing to soil, water, and air pollution. The grain and soy used to feed chickens are often grown using unsustainable farming practices, leading to deforestation, loss of biodiversity, and significant greenhouse gas emissions.</p>
+      <p>Chicken farming is has a significant environmental footprint. Large-scale operations produce substantial amounts of waste, contributing to soil, water, and air pollution. The grain and soy used to feed chickens are often grown using unsustainable farming practices, leading to deforestation, loss of biodiversity, and significant greenhouse gas emissions.</p>
 
       <h3>Health concerns</h3>
-      <p>The consumption of chicken and eggs has been linked to various health issues. The widespread use of antibiotics in poultry farming can contribute to antibiotic-resistant bacteria. Industrial chicken farming practices can lead to outbreaks of diseases such as salmonella and avian influenza. There are also concerns about the nutritional quality of poultry products, with high levels of cholesterol and saturated fats associated with increased risks of heart disease and other health conditions.</p>
+      <p>The consumption of chicken and eggs has been linked to various health issues. The widespread use of antibiotics can contribute to antibiotic-resistant bacteria. Industrial chicken farming practices can lead to outbreaks of diseases such as salmonella and avian influenza. There are also concerns about the nutritional quality of poultry products, with high levels of cholesterol and saturated fats associated with increased risks of heart disease and other health conditions.</p>
     `
   },
   Fish: {
@@ -81,7 +82,19 @@ export const Data = {
     slug: "Rabbits",
     icon: IconRabbit,
     annually: 1_000_000_000,
-    sources: ["https://www.ciwf.org.uk/farm-animals/rabbits/#:~:text=keep%20them%20safe.-,Rabbit%20farming%20today,in%20China%20(FAOSTAT%202017)..", "https://sentientmedia.org/how-many-animals-are-killed-for-food-every-day/", "https://www.fao.org/faostat/en/#data/QCL"]
+    sources: ["https://www.ciwf.org.uk/farm-animals/rabbits/#:~:text=keep%20them%20safe.-,Rabbit%20farming%20today,in%20China%20(FAOSTAT%202017)..", "https://sentientmedia.org/how-many-animals-are-killed-for-food-every-day/", "https://www.fao.org/faostat/en/#data/QCL"],
+    description: `
+      <p>Rabbits are farmed for various purposes including meat, fur, wool, and as pets.<p>
+      <p>Rabbits are kept in confined spaces, keeping them from there natural behaviours of digging, hopping around, and social interaction. This can lead to several stress and health issues.</p>
+      <p>They are farmed for their fur, which is often plucked while the animal is still alive and concious. When the fur itself is no longer profitable the animals are slaughtered for their meat. This is done through several methods including breaking necks, electrocution, or blunt force trauma. These methods are inconsistent which, if not performed correctly, can cause unnecessary suffering.<p>
+
+      <h3>Environmental concerns</h3>
+      <p>Rabbits use a substantial amount of resources, requiring large amounts of water and land to produce crops. The waste produced from keeping these animals (such as manure and cacasses) is substatial, leading to water and land pollution, affecting ecosystems and potentially contaminating water supplies.</p>
+
+      <h3>Health concerns</h3>
+      <p>Rabbits are susceptible to many diseases. The close quarters at which they are kept allow these diseases to spread rapidly, which has been known to spread to wild rabbits as well. Some diseases can spread to humans as well, presenting health risks for workers are nearby communities.</p>
+      <p>To manage diseases, antibiotics are used. Overuse can contribute to the development of antibiotic-resistant bacteria within the rabbits. The presence of antibiotics can pose risks to consumers as well.</p>
+    `,
   },
   Turkey: {
     name: "Turkeys",
