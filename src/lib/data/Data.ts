@@ -84,7 +84,7 @@ export const Data = {
     annually: 1_000_000_000,
     sources: ["https://www.ciwf.org.uk/farm-animals/rabbits/#:~:text=keep%20them%20safe.-,Rabbit%20farming%20today,in%20China%20(FAOSTAT%202017)..", "https://sentientmedia.org/how-many-animals-are-killed-for-food-every-day/", "https://www.fao.org/faostat/en/#data/QCL"],
     description: `
-      <p>Rabbits are farmed for various purposes including meat, fur, wool, and as pets.<p>
+      <p>Rabbits are farmed for various purposes including meat, fur, wool, and to keep as pets.<p>
       <p>Rabbits are kept in confined spaces, keeping them from there natural behaviours of digging, hopping around, and social interaction. This can lead to several stress and health issues.</p>
       <p>They are farmed for their fur, which is often plucked while the animal is still alive and concious. When the fur itself is no longer profitable the animals are slaughtered for their meat. This is done through several methods including breaking necks, electrocution, or blunt force trauma. These methods are inconsistent which, if not performed correctly, can cause unnecessary suffering.<p>
 
