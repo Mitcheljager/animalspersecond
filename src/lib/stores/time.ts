@@ -1,8 +1,9 @@
+import type { Readable } from "svelte/store"
 import { readable } from "svelte/store"
 
-export const secondsSinceArrival = createIntervalStore()
+export const secondsSinceArrival: Readable<number> = createIntervalStore()
 
-function createIntervalStore() {
+function createIntervalStore(): Readable<number> {
 	const initial: Date = new Date()
 
   return readable(0, set => {
