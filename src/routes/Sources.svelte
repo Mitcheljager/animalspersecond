@@ -31,7 +31,7 @@
     word-break: break-all;
 
     &:hover {
-      color: white;
+      color: $white;
       text-decoration: underline;
     }
   }
