@@ -2,9 +2,10 @@ body {
   padding: 0;
   margin: 0;
   background: #142016;
+  overflow-x: hidden;
+  transition: background-color 1000ms;
   color: white;
   font-family: $font-family;
-  overflow-x: hidden;
 
   &::before {
     content: "";

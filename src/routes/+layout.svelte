@@ -1,6 +1,12 @@
 <script>
-	import "$lib/scss/app.scss"
+	import { browser } from "$app/environment"
+	import { afterNavigate } from "$app/navigation"
 	import Sources from "./Sources.svelte"
+	import "$lib/scss/app.scss"
+
+	afterNavigate(({ to, from }) => {
+		if (browser && from) document.body.style.backgroundColor = `hsl(${Math.random() * 360}, 20%, 12%)`
+	})
 </script>
 
 <div class="layout">
