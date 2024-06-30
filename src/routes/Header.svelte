@@ -31,7 +31,6 @@
 	}
 
 	h1 {
-		@include text-gradient($gradient-yellow);
     --rolling-number-font-size: 1em;
 		position: relative;
 		display: inline;
@@ -51,6 +50,12 @@
 			border-radius: 1rem;
 			height: clamp(0.25rem, 1vw, 1rem);
 			background: $gradient-yellow;
+		}
+
+		// This needs to be applied to the text element itself, rather than the parent, as it might otherwise not show in Chrome
+		:global(.wrapper),
+		:global(.digit) {
+			@include text-gradient($gradient-yellow);
 		}
   }
 
