@@ -16,7 +16,7 @@
 </svelte:head>
 
 <Header number={sinceArrival.toLocaleString()}>
-	{#snippet subtitle()}That's the number of {name.toLowerCase()} that were killed globally since you opened this website.{/snippet}
+	{#snippet subtitle()}That's the number of {name.toLowerCase()} that were killed globally through farming since you opened this website.{/snippet}
 	<p><em>That was {secondsToWords($secondsSinceArrival)}</em></p>
 </Header>
 
