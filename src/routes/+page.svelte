@@ -18,7 +18,7 @@
 
 <svelte:head>
 	<title>Animals per second | Keeping track of animals killed every second</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Many animals are killed in order to fill our needs. The numbers are incredible hard to comprehend. This website keeps track of the number of kills every second to put things into perspective." />
 </svelte:head>
 
 <Header number={sum.toLocaleString()}>
