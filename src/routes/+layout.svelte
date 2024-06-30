@@ -4,7 +4,7 @@
 	import Sources from "./Sources.svelte"
 	import "$lib/scss/app.scss"
 
-	afterNavigate(({ to, from }) => {
+	afterNavigate(({ from }) => {
 		if (browser && from) document.body.style.backgroundColor = `hsl(${Math.random() * 360}, 20%, 12%)`
 	})
 </script>
