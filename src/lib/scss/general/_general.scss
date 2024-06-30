@@ -19,6 +19,11 @@ body {
     height: 100vh;
     pointer-events: none;
   }
+
+  ::selection {
+    color: $black;
+    background: $yellow;
+  }
 }
 
 a,
