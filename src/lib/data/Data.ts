@@ -66,8 +66,19 @@ export const Data = {
     slug: "ducks",
     icon: IconDuck,
     annually: 3_000_000_000,
-    sources: [],
-    description: ``
+    sources: ["https://ourworldindata.org/grapher/animals-slaughtered-for-meat?facet=metric&uniformYAxis=0", "https://www.barnsanctuary.org/the-barn-blog/learn-about-ducks", "https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0009/442854/introduction-to-commercial-duck-farming.pdf"],
+    description: `
+      <p>Ducks are farmed primarily for consumption of meat, eggs, and foie gras (fatty liver). China is one of the most significant producers, but ducks are farmed globally at a large scale.</p>
+
+      <h3>Farming conditions</h3>
+      <p>Most ducks are killed in farms without any access to water. Ducks spend most of their time swimming and their legs are not capable of standing on their legs for an extended period of time, let alone their entire lives. As a result they can't properly developer their leg and foot muscles, leading to cronic discomfort and pain. These farm environments are overcrowded, causing immense stress, and leading to the ducks plucking their own feathers and attacking other ducks. As a means to lessen the impact their beaks and feet are snipped. This is often done without anesthesia, leading to unnecessary suffering or even death. Ducks are slaughtered after only 7 weeks of age, after being grown at unnatural rates. When ducks are transported to the slaughterhouses this is often done in extremely tight quarters, with many ducks dying from suffocation, heat, cold, or lack of food and water.</p>
+
+      <h3>Foie gras</h3>
+      <p>Ducks that are farmed for foie gras are kept in tiny cages where they are force fed over a period of several weeks. Pipes are forced down their throat and food is directly pumped into their stomach in order to fatten them up as quickly as possible. This process is extremely painful and leads to immense stress and depression. Only male ducks are used for foie gras, with female ducks either being culled or raised for meat instead.</p>
+
+      <h3>Hunting</h3>
+      <p>Many ducks are killed through hunting. This is done either in the wild, or in some cases ducks are raised to be hunted for sport and leasure. Hunting ducks often leads to unnecessary harm as ducks are often injured and maimed, rather than killed out right. While hunting is often regulated, it still often leads to a decline in duck populations which affects biodiversity. Wild ducks play a curcial role in their ecosystems, including controlling insect and dispersing seeds. Their decline can have a lasting effect on everything around them.</p>
+    `
   },
   Cow: {
     name: "Cows",
