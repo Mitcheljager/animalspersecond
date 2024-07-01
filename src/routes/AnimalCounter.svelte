@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { numbersSinceArrival } from "$lib/stores/data"
 	import { secondsSinceArrival } from "$lib/stores/time"
 	import { bigNumberToWords } from "$lib/utils/number"
 	import RollingNumber from "./RollingNumber.svelte"
