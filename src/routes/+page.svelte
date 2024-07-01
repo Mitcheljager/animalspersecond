@@ -4,12 +4,14 @@
 	import { secondsSinceArrival } from "$lib/stores/time"
 	import { numbersSinceArrival } from "$lib/stores/data"
 	import { secondsToWords } from "$lib/utils/time"
+	import { bigNumberToWords } from "$lib/utils/number"
 	import AnimalCounter from "./AnimalCounter.svelte"
 	import Header from "./Header.svelte"
 
 	const animals: Array<Animal> = sortAnimals()
 
 	const sum: number = $derived(Math.floor($numbersSinceArrival.reduce((a, b) => a + b, 0)))
+	const annualSum: number = Object.values(Data).reduce((a, b) => a + b.annually, 0)
 
 	function sortAnimals(): Array<Animal> {
 		return Object.values(Data).sort((a, b) => b.annually - a.annually)
@@ -22,7 +24,7 @@
 </svelte:head>
 
 <Header number={sum.toLocaleString()}>
-	{#snippet subtitle()}That's the number of animals that were killed globally through farming since you opened this website.{/snippet}
+	{#snippet subtitle()}That's the number of animals that were killed globally through farming since you opened this website. That is {bigNumberToWords(annualSum)} per year.{/snippet}
 	<p><em>That was {secondsToWords($secondsSinceArrival)}</em></p>
 </Header>
 
