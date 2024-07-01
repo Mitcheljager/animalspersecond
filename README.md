@@ -1,18 +1,6 @@
-# create-svelte
+# 🐤 animalspersecond.org
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+Keeping track of the amount of animals killed by the second. Intended as an informative way to make better sense of the giant annual numbers that tend to be hard to comprehend.
 
 ## Developing
 
