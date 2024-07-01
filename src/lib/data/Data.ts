@@ -58,8 +58,21 @@ export const Data = {
     slug: "pigs",
     icon: IconPig,
     annually: 1_500_000_000,
-    sources: [],
-    description: ``
+    sources: ["https://www.roysfarm.com/pig-farming/"],
+    description: `
+      <p>Pigs are primarily farmed for food, as well as for their skin. They are also used for cosmetics and medical use. Half of this is done in China, but pigs are farmed world-wide.</p>
+      <p>Pigs are kept in small confined and crowded spaces. The stress this causes leads to agressive behaviour amongst the pigs. To combat this pigs tails and teeth are often trimmed to prevent them from harming each other. This is often done without any sort of anethesia, causing immense pain. The confined spaces lead to severe health issues are the animals are not able to excerise their muscles. They often end up laying in the same position for a long time, leading to sores, muscle fatigue, and bone damage. All of which is painful and often left untreated.</p>
+      <p>Pigs are artifically impregnated, forcing them to have offspring. While pregant and after giving birth the piglets are kept in a small cage together their mother so they can constantly feed. The small space may lead to piglets getting crushed by their mother, as there isn't enough space for her to move effectively. They may also die due to diseases due to poor conditions, or starvation as the piglets fight for access to the mother's milk.</p>
+
+      <h3>Slaughter</h3>
+      <p>When the pigs are ready for slaughter their are transported away from the farm. While in transport, which may be a long journey, many pigs end up killed due to poor conditions from overcrowding. The overcrowding results in significant distress, leading to injuries, and worse. In the slaughterhouse pigs are often stunned before being slaughtered. This is done either through electrical stunning, gas, or through a mechanical blow to the head. After stunning the pigs are hung from their legs and their throats are cut to allow blood to drain out. Stunning is not always effective and many pigs end up being concious while bleeding out, leading to immense pain and distress before their death.</p>
+
+      <h3>Environmental impact</h3>
+      <p>The pigs produce large amounts of waste which end up contaminating soil or water soils if not taken care off properly. Additionally pigs produce a lot of methane and ammonia emissions, contributing to greenhouse gases.</p>
+
+      <h3>Health concerns</h3>
+      <p>To fight diseases amongst the pigs, high levels of antibiotics are used. The antibiotics end up in the final product, consumption might end up with a build up of antibiotics-resistant bactiara in humans. Additionally diseases can spread rapidly amongst the pigs, some of which many be transfered from pigs to humans.</p>
+    `
   },
   Duck: {
     name: "Ducks",
