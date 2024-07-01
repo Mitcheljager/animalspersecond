@@ -33,7 +33,7 @@
     <div>{bigNumberToWords(Math.floor(hourly))} per hour</div>
     <div class="counter"><span class="underline"><RollingNumber number={Math.round(sinceArrival).toLocaleString()} /> since you got here.</span></div>
 
-    <button class="button">Tell me more</button>
+    <div class="button">Tell me more</div>
   </div>
 </a>
 
