@@ -42,7 +42,7 @@ export const Data = {
     slug: "fish",
     icon: IconFish,
     annually: 1_500_000_000_000,
-    sources: ["https://www.nationalgeographic.com/science/article/global-industrial-fishing-footprint-spd", "https://www.worldwildlife.org/threats/overfishing", "https://www.pewtrusts.org/en/research-and-analysis/issue-briefs/2022/11/more-than-100000-fishing-related-deaths-occur-each-year-study-finds"],
+    sources: ["https://www.nationalgeographic.com/science/article/global-industrial-fishing-footprint-spd", "https://www.worldwildlife.org/threats/overfishing", "https://www.pewtrusts.org/en/research-and-analysis/issue-briefs/2022/11/more-than-100000-fishing-related-deaths-occur-each-year-study-finds", "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2020.6148"],
     description: `
       <p>Fishing is primarily done in the open ocean, rather than farms. Nets are cast and will catch anything caught within them. Many of the fish caught are not intended to be caught, including dolphins, turtles, and even seabirds, causing unnecessary harm. But even the fish that were intended to be caught suffer in droves. The fish are all squished together in the net the fish and up suffocating. Those that are not killed by suffocation are brought to the surface and end up dying due to a lack of water. In either case the animals end up dying a slow and painful death.</p>
 
@@ -58,7 +58,7 @@ export const Data = {
     slug: "pigs",
     icon: IconPig,
     annually: 1_500_000_000,
-    sources: ["https://www.roysfarm.com/pig-farming/"],
+    sources: ["https://ourworldindata.org/how-many-animals-get-slaughtered-every-day", "https://www.roysfarm.com/pig-farming/", "https://faunalytics.org/global-animal-slaughter-statistics-charts-2022-update/", "https://www.sinergiaanimalinternational.org/single-post/slaughterhouses"],
     description: `
       <p>Pigs are primarily farmed for food, as well as for their skin. They are also used for cosmetics and medical use. Half of this is done in China, but pigs are farmed world-wide.</p>
       <p>Pigs are kept in small confined and crowded spaces. The stress this causes leads to agressive behaviour amongst the pigs. To combat this pigs tails and teeth are often trimmed to prevent them from harming each other. This is often done without any sort of anethesia, causing immense pain. The confined spaces lead to severe health issues are the animals are not able to excerise their muscles. They often end up laying in the same position for a long time, leading to sores, muscle fatigue, and bone damage. All of which is painful and often left untreated.</p>
