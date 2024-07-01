@@ -37,7 +37,6 @@
 		<AnimalCounter {...animal} />
 	{/each}
 </div>
-
 <p class="many-more">And so many others...</p>
 
 <h3>What about fish?</h3>
@@ -47,6 +46,7 @@
 		<AnimalCounter {...animal} />
 	{/each}
 </div>
+<p class="many-more">And so many others...</p>
 
 <h3>What about insects?</h3>
 <p class="description">Insects are a difficult measure. Their large numbers and tiny size make it tough to get accurate measurements. Their well being is difficult to evaluate as there is little research on the emotional and physical capacity of insects. None the less all sorts of insects are actively farmed in huge numbers. These numbers don't include accidental deaths from cars, pesticides, etc.</p>
@@ -55,6 +55,7 @@
 		<AnimalCounter {...animal} />
 	{/each}
 </div>
+<p class="many-more">And so many others...</p>
 
 <div>
 	<h2 class="statement">Let's be better.</h2>
