@@ -25,7 +25,7 @@
 
     <div>{bigNumberToWords(Math.floor(annually))} per year</div>
     <div>{bigNumberToWords(Math.floor(hourly))} per hour</div>
-    <div class="counter"><span class="underline"><RollingNumber number={Math.round(sinceArrival).toLocaleString()} /> since you got here.</span></div>
+    <div class="counter"><span class="underline"><RollingNumber number={Math.round(sinceArrival).toLocaleString("nl-NL")} /> since you got here.</span></div>
 
     <div class="button">Tell me more</div>
   </div>

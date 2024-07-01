@@ -17,7 +17,7 @@
   <meta name="description" content="{name} are killed without much thought in order to meet our needs. {capitalizeFirstLetter(bigNumberToWords(annually))} {name.toLowerCase()} are killed every year, that is {secondly < 1 ? secondly : Math.round(secondly)} per second." />
 </svelte:head>
 
-<Header number={sinceArrival.toLocaleString()}>
+<Header number={sinceArrival.toLocaleString("nl-NL")}>
 	{#snippet subtitle()}That's the number of {name.toLowerCase()} that were killed globally through farming since you opened this website.{/snippet}
 </Header>
 

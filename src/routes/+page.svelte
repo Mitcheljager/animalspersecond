@@ -24,7 +24,7 @@
 	<meta name="description" content="Many animals are killed in order to fill our needs. The numbers are incredible hard to comprehend. This website keeps track of the number of kills every second to put things into perspective." />
 </svelte:head>
 
-<Header number={sum.toLocaleString()}>
+<Header number={sum.toLocaleString("nl-NL")}>
 	{#snippet subtitle()}That's the number of land animals that were killed globally through farming since you opened this website. That is {bigNumberToWords(annualSum)} per year.{/snippet}
 </Header>
 
