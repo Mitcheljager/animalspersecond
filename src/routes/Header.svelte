@@ -1,11 +1,13 @@
 <script lang="ts">
   import type { Snippet } from "svelte"
   import RollingNumber from "./RollingNumber.svelte"
+	import { secondsToWords } from "$lib/utils/time"
+	import { secondsSinceArrival } from "$lib/stores/time"
 
   interface Props {
     number: string,
 		subtitle: Snippet,
-    children: Snippet
+    children?: Snippet
   }
 
   const { number, subtitle, children } : Props = $props()
@@ -14,7 +16,11 @@
 <header>
 	<h1><RollingNumber {number} /></h1>
 	<h2>{@render subtitle()}</h2>
-	{@render children()}
+	<p><em>That was {secondsToWords($secondsSinceArrival)}</em></p>
+
+	{#if children}
+		{@render children()}
+	{/if}
 </header>
 
 <style lang="scss">
@@ -69,5 +75,11 @@
 		letter-spacing: 2px;
 		font-weight: normal;
 		font-size: clamp(21px, 5vw, 24px);
+	}
+
+	p {
+		margin: 1rem 0 0;
+		font-size: 16px;
+		line-height: 1.35em;
 	}
 </style>

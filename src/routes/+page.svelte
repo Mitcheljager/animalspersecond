@@ -5,13 +5,14 @@
 	import { numbersSinceArrival } from "$lib/stores/data"
 	import { secondsToWords } from "$lib/utils/time"
 	import { bigNumberToWords } from "$lib/utils/number"
+	import { Category } from "$lib/data/Category"
 	import AnimalCounter from "./AnimalCounter.svelte"
 	import Header from "./Header.svelte"
 
 	const animals: Array<Animal> = sortAnimals()
 
 	const sum: number = $derived(Math.floor($numbersSinceArrival.reduce((a, b) => a + b, 0)))
-	const annualSum: number = Object.values(Data).reduce((a, b) => a + b.annually, 0)
+	const annualSum: number = Object.values(Data).filter(a => a.category === Category.Land).reduce((a, b) => a + b.annually, 0)
 
 	function sortAnimals(): Array<Animal> {
 		return Object.values(Data).sort((a, b) => b.annually - a.annually)
@@ -24,17 +25,24 @@
 </svelte:head>
 
 <Header number={sum.toLocaleString()}>
-	{#snippet subtitle()}That's the number of animals that were killed globally through farming since you opened this website. That is {bigNumberToWords(annualSum)} per year.{/snippet}
-	<p><em>That was {secondsToWords($secondsSinceArrival)}</em></p>
+	{#snippet subtitle()}That's the number of land animals that were killed globally through farming since you opened this website. That is {bigNumberToWords(annualSum)} per year.{/snippet}
 </Header>
 
 <div class="animals">
-	{#each animals as animal, index}
-		<AnimalCounter {index} {...animal} />
+	{#each animals.filter(a => a.category === Category.Land) as animal}
+		<AnimalCounter {...animal} />
 	{/each}
 </div>
 
 <p class="many-more">And so many others...</p>
+
+<h3>What about fish?</h3>
+<p class="description">The number of fish that are killed each year is difficult to measure. Captured fish is measured in weight, rather than count. Roughly 175 million tonnes of fish are caught every year. Estimates put this somewhere between 1 and 2.5 trillion fish. That is more than 15 times the number of all land animals combined.</p>
+<div class="animals">
+	{#each animals.filter(a => a.category === Category.Ocean) as animal}
+		<AnimalCounter {...animal} />
+	{/each}
+</div>
 
 <div>
 	<h2 class="statement">Let's be better.</h2>
@@ -42,7 +50,12 @@
 
 <style lang="scss">
 	p {
-		margin: 1rem 0 0;
+		margin: 1rem 0;
+	}
+
+	h3 {
+		margin: 5rem 0 2rem;
+		color: $yellow;
 	}
 
 	.animals {
@@ -52,6 +65,11 @@
 		@media (min-width: 768px) {
 			grid-template-columns: 1fr 1fr;
 		}
+	}
+
+	.description {
+		margin: 2rem 0;
+		line-height: 1.65em;
 	}
 
 	.many-more {

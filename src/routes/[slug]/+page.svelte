@@ -2,7 +2,7 @@
 	import { secondsSinceArrival } from "$lib/stores/time"
 	import { bigNumberToWords } from "$lib/utils/number"
 	import { capitalizeFirstLetter } from "$lib/utils/text";
-	import { annuallyToSecondly, secondsToWords } from "$lib/utils/time"
+	import { annuallyToSecondly } from "$lib/utils/time"
 	import Header from "../Header.svelte"
 
   const { data } = $props()
@@ -19,7 +19,6 @@
 
 <Header number={sinceArrival.toLocaleString()}>
 	{#snippet subtitle()}That's the number of {name.toLowerCase()} that were killed globally through farming since you opened this website.{/snippet}
-	<p><em>That was {secondsToWords($secondsSinceArrival)}</em></p>
 </Header>
 
 <div class="description">
@@ -29,7 +28,6 @@
 
 <style lang="scss">
   .description {
-    font-size: clamp(18px, 3vw, 21px);
     line-height: 1.65em;
 
     :global(h3) {

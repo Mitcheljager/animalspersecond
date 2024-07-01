@@ -5,22 +5,16 @@
 	import RollingNumber from "./RollingNumber.svelte"
 
   const {
-    index = 0,
     name = "",
     slug = "",
     icon = "",
     annually = 0,
-    exclude_from_total = false
   } = $props()
 
   const daily = $derived(annually / 365)
   const hourly = $derived(daily / 24)
   const secondly = $derived(hourly / 60 / 60)
   const sinceArrival = $derived(secondly * $secondsSinceArrival)
-
-  $effect(() => {
-    if (!exclude_from_total) $numbersSinceArrival[index] = sinceArrival
-  })
 </script>
 
 <a href="/{slug}" class="animal">

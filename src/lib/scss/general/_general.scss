@@ -6,6 +6,7 @@ body {
   transition: background-color 1000ms;
   color: white;
   font-family: $font-family;
+  font-size: clamp(18px, 3vw, 21px);
 
   &::before {
     content: "";

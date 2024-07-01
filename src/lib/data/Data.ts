@@ -16,11 +16,13 @@ import IconDeer from "$lib/images/deer.svg"
 import IconDog from "$lib/images/dog.svg"
 import IconRodent from "$lib/images/rodent.svg"
 import IconShark from "$lib/images/shark.svg"
+import { Category } from "./Category"
 
 export const Data = {
   Chicken: {
     name: "Chickens",
     slug: "chickens",
+    category: Category.Land,
     icon: IconChicken,
     annually: 70_000_000_000,
     sources: ["https://www.biologicaldiversity.org/takeextinctionoffyourplate/pdfs/ChickenFactsheet.pdf", "https://epar.evans.uw.edu/research/environmental-implications-livestock-chickens", "https://ourworldindata.org/how-many-animals-get-slaughtered-every-day", "https://www.al.org.au/how-many-chickens-die-every-year"],
@@ -40,6 +42,7 @@ export const Data = {
   Fish: {
     name: "Fish",
     slug: "fish",
+    category: Category.Ocean,
     icon: IconFish,
     annually: 1_500_000_000_000,
     sources: ["https://www.nationalgeographic.com/science/article/global-industrial-fishing-footprint-spd", "https://www.worldwildlife.org/threats/overfishing", "https://www.pewtrusts.org/en/research-and-analysis/issue-briefs/2022/11/more-than-100000-fishing-related-deaths-occur-each-year-study-finds", "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2020.6148"],
@@ -56,6 +59,7 @@ export const Data = {
   Pig: {
     name: "Pigs",
     slug: "pigs",
+    category: Category.Land,
     icon: IconPig,
     annually: 1_500_000_000,
     sources: ["https://ourworldindata.org/how-many-animals-get-slaughtered-every-day", "https://www.roysfarm.com/pig-farming/", "https://faunalytics.org/global-animal-slaughter-statistics-charts-2022-update/", "https://www.sinergiaanimalinternational.org/single-post/slaughterhouses"],
@@ -77,6 +81,7 @@ export const Data = {
   Duck: {
     name: "Ducks",
     slug: "ducks",
+    category: Category.Land,
     icon: IconDuck,
     annually: 3_000_000_000,
     sources: ["https://ourworldindata.org/grapher/animals-slaughtered-for-meat?facet=metric&uniformYAxis=0", "https://www.barnsanctuary.org/the-barn-blog/learn-about-ducks", "https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0009/442854/introduction-to-commercial-duck-farming.pdf"],
@@ -96,6 +101,7 @@ export const Data = {
   Cow: {
     name: "Cows",
     slug: "cows",
+    category: Category.Land,
     icon: IconCow,
     annually: 300_000_000,
     sources: [],
@@ -104,6 +110,7 @@ export const Data = {
   Sheep: {
     name: "Sheep",
     slug: "sheep",
+    category: Category.Land,
     icon: IconSheep,
     annually: 550_000_000,
     sources: [],
@@ -112,6 +119,7 @@ export const Data = {
   Rabbit: {
     name: "Rabbits",
     slug: "Rabbits",
+    category: Category.Land,
     icon: IconRabbit,
     annually: 1_000_000_000,
     sources: ["https://www.ciwf.org.uk/farm-animals/rabbits/#:~:text=keep%20them%20safe.-,Rabbit%20farming%20today,in%20China%20(FAOSTAT%202017)..", "https://sentientmedia.org/how-many-animals-are-killed-for-food-every-day/", "https://www.fao.org/faostat/en/#data/QCL"],
@@ -131,6 +139,7 @@ export const Data = {
   Turkey: {
     name: "Turkeys",
     slug: "turkeys",
+    category: Category.Land,
     icon: IconTurkey,
     annually: 650_000_000,
     sources: [],
@@ -139,6 +148,7 @@ export const Data = {
   Goose: {
     name: "Geese",
     slug: "geese",
+    category: Category.Land,
     icon: IconGoose,
     annually: 700_000_000,
     sources: [],
@@ -147,6 +157,7 @@ export const Data = {
   Goat: {
     name: "Goats",
     slug: "goats",
+    category: Category.Land,
     icon: IconGoat,
     annually: 450_000_000,
     sources: [],
@@ -155,6 +166,7 @@ export const Data = {
   Buffalo: {
     name: "Buffalo",
     slug: "buffalo",
+    category: Category.Land,
     icon: IconBuffalo,
     annually: 24_000_000,
     sources: [],
@@ -163,6 +175,7 @@ export const Data = {
   Camel: {
     name: "Camels",
     slug: "camels",
+    category: Category.Land,
     icon: IconCamel,
     annually: 3_000_000,
     sources: [],
@@ -171,6 +184,7 @@ export const Data = {
   Pigeon: {
     name: "Pigeons (and other birds)",
     slug: "pigeons",
+    category: Category.Land,
     icon: IconPigeon,
     annually: 45_000_000,
     sources: [],
@@ -179,6 +193,7 @@ export const Data = {
   Horse: {
     name: "Horses",
     slug: "horses",
+    category: Category.Land,
     icon: IconHorse,
     annually: 4_500_000,
     sources: [],
@@ -187,6 +202,7 @@ export const Data = {
   Deer: {
     name: "Deer",
     slug: "deer",
+    category: Category.Land,
     icon: IconDeer,
     annually: 10_000_000,
     sources: [],
@@ -195,6 +211,7 @@ export const Data = {
   Dog: {
     name: "Dogs",
     slug: "dogs",
+    category: Category.Land,
     icon: IconDog,
     annually: 25_000_000,
     sources: [],
@@ -203,6 +220,7 @@ export const Data = {
   Rodent: {
     name: "Rodents",
     slug: "rodents",
+    category: Category.Land,
     icon: IconRodent,
     annually: 70_000_000,
     sources: [],
@@ -211,9 +229,9 @@ export const Data = {
   Shark: {
     name: "Sharks",
     slug: "sharks",
+    category: Category.Ocean,
     icon: IconShark,
     annually: 80_000_000,
-    exclude_from_total: true,
     sources: ["https://www.science.org/doi/10.1126/science.adf8984", "https://www.greenpeace.org/international/story/46967/100-million-dead-sharks-its-not-all-about-shark-fin-soup/", "https://www.eoceans.org/sharks-and-rays/100-million-sharks-killed-each-year", "https://www.smithsonianmag.com/smart-news/sharks-are-being-killed-at-rising-rates-despite-increased-regulations-180983593/"],
     description: ``
   }
