@@ -1,3 +1,4 @@
+import { Category } from "./Category"
 import IconChicken from "$lib/images/chicken.svg"
 import IconFish from "$lib/images/fish.svg"
 import IconDuck from "$lib/images/duck.svg"
@@ -16,7 +17,10 @@ import IconDeer from "$lib/images/deer.svg"
 import IconDog from "$lib/images/dog.svg"
 import IconRodent from "$lib/images/rodent.svg"
 import IconShark from "$lib/images/shark.svg"
-import { Category } from "./Category"
+import IconCricket from "$lib/images/cricket.svg"
+import IconMealworms from "$lib/images/mealworm.svg"
+import IconFly from "$lib/images/fly.svg"
+import IconBee from "$lib/images/bee.svg"
 
 export const Data = {
   Chicken: {
@@ -234,5 +238,43 @@ export const Data = {
     annually: 80_000_000,
     sources: ["https://www.science.org/doi/10.1126/science.adf8984", "https://www.greenpeace.org/international/story/46967/100-million-dead-sharks-its-not-all-about-shark-fin-soup/", "https://www.eoceans.org/sharks-and-rays/100-million-sharks-killed-each-year", "https://www.smithsonianmag.com/smart-news/sharks-are-being-killed-at-rising-rates-despite-increased-regulations-180983593/"],
     description: ``
-  }
+  },
+  BlackSoldierFly: {
+    name: "Black Soldier Flies",
+    slug: "black-soldier-flies",
+    category: Category.Insect,
+    icon: IconFly,
+    annually: 200_000_000_000,
+    sources: ["https://rethinkpriorities.org/publications/welfare-considerations-for-farmed-black-soldier-flies-hermetia-illucens", "https://rethinkpriorities.org/publications/insects-raised-for-food-and-feed"],
+    description: ``
+  },
+  Cricket: {
+    name: "Crickets",
+    slug: "crickets",
+    category: Category.Insect,
+    icon: IconCricket,
+    annually: 400_000_000_000,
+    sources: ["https://rethinkpriorities.org/publications/insects-raised-for-food-and-feed", "https://www.businessinsider.com/how-50-million-crickets-harvested-a-week-become-food-2021-4?international=true&r=US&IR=T"],
+    description: ``
+  },
+  Mealworm: {
+    name: "Mealworms",
+    slug: "mealworms",
+    category: Category.Insect,
+    icon: IconMealworms,
+    annually: 300_000_000_000,
+    sources: ["https://rethinkpriorities.org/publications/insects-raised-for-food-and-feed", "https://bootstrapbee.com/smallholding/is-mealworm-farming-profitable"],
+    description: ``
+  },
+  Bee: {
+    name: "Bees",
+    slug: "bees",
+    category: Category.Insect,
+    icon: IconBee,
+    annually: 1_300_000_000_000,
+    sources: ["https://www.destatis.de/EN/Themes/Countries-Regions/International-Statistics/Data-Topic/AgricultureForestryFisheries/Bees.html", "https://www.statista.com/topics/5090/honey-market-worldwide/"],
+    description: `
+      <p>This number is derived from a low estimate of 101.6 million beehives world wide, each housing an average of 45 thousand bees. Bees are active for a period of roughly 6 months and have a life span of 4 to 6 weeks. (45,000x101.6x106x6x452≈1.3x10^12)
+    `
+  },
 }
