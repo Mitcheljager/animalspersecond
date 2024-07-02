@@ -49,7 +49,7 @@
 <p class="many-more">And so many others...</p>
 
 <h3>What about insects?</h3>
-<p class="description">Insects are a difficult measure. Their large numbers and tiny size make it tough to get accurate measurements. Their wellbeing is difficult to evaluate as there is little research on the emotional and physical capacity of insects. None the less all sorts of insects are actively farmed in huge numbers. These numbers don't include accidental deaths from cars, pesticides, etc.</p>
+<p class="description">Insects are a difficult measure. Their large numbers and tiny size make it tough to get accurate measurements. Their wellbeing is difficult to evaluate as there is little research on the emotional and physical capacity of insects. None the less all sorts of insects are actively farmed in huge numbers.</p>
 <div class="animals">
 	{#each filterAnimalByCategory(Category.Insect) as animal}
 		<AnimalCounter {...animal} />
