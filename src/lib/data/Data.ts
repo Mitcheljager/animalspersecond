@@ -237,7 +237,18 @@ export const Data = {
     icon: IconShark,
     annually: 80_000_000,
     sources: ["https://www.science.org/doi/10.1126/science.adf8984", "https://www.greenpeace.org/international/story/46967/100-million-dead-sharks-its-not-all-about-shark-fin-soup/", "https://www.eoceans.org/sharks-and-rays/100-million-sharks-killed-each-year", "https://www.smithsonianmag.com/smart-news/sharks-are-being-killed-at-rising-rates-despite-increased-regulations-180983593/"],
-    description: ``
+    description: `
+      <p>Sharks are fished primarily for their meat, fins, cartilage, and liver oil. They are also often caught as bycatch while fishing for other fish.</p>
+
+      <h3>Climate change</h3>
+      <p>Sharks are very important in the overall health of marine ecosystems. Their decline will lead to an imbalance in food sources. Shark populations contribute greatly to the health of coral reefs by regulation the numbers of other species of fish that feed on reef-building organisms. As such killing sharks will directly result in the decline of coral reefs, which are vital in reducing carbon from the air, amongst other benefits, resulting in rising sea temperatures.</p>
+
+      <h3>Finning</h3>
+      <p>Finning involves catching sharks, removing their fins, and often discarding the still alive sharks back into the ocean. Sharks without fins cannot swim properly and they end up slowly dying through suffocation, blood loss, hunger, or by being preyed on by other fish. Fins are considred delicacies in some cultures and can fetch high prices, driving the demand for this common practice.</p>
+
+      <h3>Public perception</h3>
+      <p>Shark are often viewed negatively, as some sort of evil that lies within the oceans, making it difficult to gain attention for conservation efforts. Sharks kill less than 10 people a year world-wide, while people kill over 80 million sharks. In truth shark are vital to the health of their ecosystems and without them coral reefs will suffer, and we will too as a result.</p>
+    `
   },
   BlackSoldierFly: {
     name: "Black Soldier Flies",
