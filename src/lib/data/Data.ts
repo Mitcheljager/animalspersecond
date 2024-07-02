@@ -272,9 +272,12 @@ export const Data = {
     category: Category.Insect,
     icon: IconBee,
     annually: 1_300_000_000_000,
-    sources: ["https://www.destatis.de/EN/Themes/Countries-Regions/International-Statistics/Data-Topic/AgricultureForestryFisheries/Bees.html", "https://www.statista.com/topics/5090/honey-market-worldwide/"],
+    sources: ["https://www.destatis.de/EN/Themes/Countries-Regions/International-Statistics/Data-Topic/AgricultureForestryFisheries/Bees.html", "https://www.statista.com/topics/5090/honey-market-worldwide/", "https://www.scientificamerican.com/article/the-problem-with-honey-bees/"],
     description: `
-      <p>This number is derived from a low estimate of 101.6 million beehives world wide, each housing an average of 45 thousand bees. Bees are active for a period of roughly 6 months and have a life span of 4 to 6 weeks. (45,000x101.6x106x6x452≈1.3x10^12)
+      <p>This number is derived from a low estimate of 101.6 million beehives world wide, each housing an average of 45 thousand bees. Bees are active for a period of roughly 6 months and have a life span of 4 to 6 weeks (45,000*101.6*106*6*452 ≈ 1.3*10^12).</p>
+      <p>While bee farming can have positive effects for pollination, large farms bring a lot of trouble. There are over 20 thousand species of bees, only two (the Western honey bee, and the Eastern honey bee) are commonly used for farming honey. Bringing in large amount of bees drives out native species of bees, causing an unbalance in the natural ecosystems. Many of these native species are at risk of extinction. When you buy honey it's good to remember that no matter how well managed and natural the bee farm might be, it has likely caused more harm than good.</p>
+      <p>The use of pesticides has meant an even larger decline of wild bees. The pesticides used on farms harm both farmer bees and wild bees. Additionally, intense farming practices lead of degragation of nature, reducing the amount of wild flowers, and reducing the amount of nesting sites for wild bee species.</p>
+      <p>Bees are incredibly important as natural pollinators, as such it's important to save the bees. But that means saving all the bees, not just the honey bees.</p>
     `
   },
 }
