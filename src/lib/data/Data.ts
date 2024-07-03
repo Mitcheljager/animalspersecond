@@ -108,8 +108,22 @@ export const Data = {
     category: Category.Land,
     icon: IconCow,
     annually: 300_000_000,
-    sources: [],
-    description: ``
+    sources: ["https://thehumaneleague.org/article/why-are-cows-bad-for-the-environment", "https://www.worldwildlife.org/industries/beef", "https://epar.evans.uw.edu/sites/default/files/EVANS_UW_Request_155_Environmental_Impacts_of_Livestock_Cattle.pdf"],
+    description: `
+      <p>Cows are farmed for various reasons; meat, dairy, leather, gelatin, and fertilizer are the most common use cases.<p>
+      <p>Cows require a large amount of space to be happy. They also require proper shelters. This includes adequate protection against weather, shade to protect against hot weather, and proper insulation during colder seasons. In reality they are often kept in crowded, limited, and dirty conditions, leading to stress, injuries, and rapid spreading of diseases.</p>
+      <p>Cows are often treated poorly. Cows are artifically impregnated, not only to produce new cows, but also keep them produce a steady amount of milk, which just like all other animals, is primarily produced during and after pregnancy. While cows are pregnant they are kept in tiny cells for extended periods of time while they are milked. This process is often done twice a day and is very uncomfortable for the cows. Additionally cows are often branded with hot steel. This is done while the cow is fully concious. The incredibly pain that this causes is traumatic and can lead to a quick decline in mental health.<p>
+
+      <h3>Environmental concerns</h3>
+      <p>Cows require adequare space to move and graze. The large amount of lands needed lead to deforestation as trees are cleared to make room for pastures. These pastures are then often left improperly cared for, with overgrazing being a major factor. This leads to erosion of the soil and with that loss of arable land.</p>
+      <p>Cows produce a very large of methane, a greenhouse gas. Greenhouse gases lead to global warming, and methane is one of the larger contributors. The immense amount of cows that are kept make up for a very large portion of the world's greenhouse gas production.</p>
+      <p>Large amounts of water are needed to sustain the cows. This comes in the form of drinking water, water for the crops and land, and water used during the processing of meat.</p>
+
+      <h3>Health concerns</h3>
+      <p>Red meat has been linked to increased risks of heart disease, strokes, and even cancer. Regular consumption of red meat can have a serious impact on your wellbeing.</p>
+      <p>The large amount of antibiotics used to combat diseases amongst the cows end up producing antibiotics resistant bacteria. These antibiotics are present in the final meat product and have the same negative effects on humans.</p>
+
+    `
   },
   Sheep: {
     name: "Sheep",
