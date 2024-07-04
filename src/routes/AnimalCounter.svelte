@@ -2,6 +2,7 @@
 	import { browser } from "$app/environment"
   import { secondsSinceArrival } from "$lib/stores/time"
 	import { bigNumberToWords } from "$lib/utils/number"
+	import { onMount } from "svelte";
 	import RollingNumber from "./RollingNumber.svelte"
 
   const {
@@ -16,9 +17,22 @@
   const secondly = $derived(hourly / 60 / 60)
   const sinceArrival = $derived(secondly * $secondsSinceArrival)
   const localeNumber = $derived(Math.round(sinceArrival).toLocaleString("nl-NL"))
+
+  let element: HTMLElement | null = null
+  let isVisible = $state(false)
+
+  onMount(() => {
+    if (!browser) return
+    if (!element) return
+
+    const observer = new IntersectionObserver(([entry]) => isVisible = entry.isIntersecting)
+    observer.observe(element)
+
+    return () => observer.disconnect()
+  })
 </script>
 
-<a href="/{slug}" class="animal">
+<a href="/{slug}" class="animal" bind:this={element}>
   <img class="icon" loading="lazy" src={icon} alt="" width="80" height="80" />
 
   <div class="content">
@@ -28,7 +42,7 @@
     <div>{bigNumberToWords(Math.floor(hourly))} per hour</div>
     <div class="counter">
       <span class="underline">
-        {#if browser}
+        {#if isVisible}
           <RollingNumber number={localeNumber} />
         {:else}
           {localeNumber}
