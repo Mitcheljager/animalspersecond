@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { browser } from "$app/environment";
-import { secondsSinceArrival } from "$lib/stores/time"
+	import { browser } from "$app/environment"
+  import { secondsSinceArrival } from "$lib/stores/time"
 	import { bigNumberToWords } from "$lib/utils/number"
 	import RollingNumber from "./RollingNumber.svelte"
 
