@@ -120,7 +120,7 @@ export const Data = {
       <p>Large amounts of water are needed to sustain the cows. This comes in the form of drinking water, water for the crops and land, and water used during the processing of meat.</p>
 
       <h3>Health concerns</h3>
-      <p>Red meat has been linked to increased risks of heart disease, strokes, and even cancer. Regular consumption of red meat can have a serious impact on your wellbeing.</p>
+      <p>Red meat has been linked to increased risks of heart disease, strokes, and even cancer. Regular consumption of red meat can have a serious impact on your well-being.</p>
       <p>The large amount of antibiotics used to combat diseases amongst the cows end up producing antibiotics resistant bacteria. These antibiotics are present in the final meat product and have the same negative effects on humans.</p>
 
     `
@@ -288,8 +288,12 @@ export const Data = {
     category: Category.Insect,
     icon: IconMealworms,
     annually: 300_000_000_000,
-    sources: ["https://rethinkpriorities.org/publications/insects-raised-for-food-and-feed", "https://bootstrapbee.com/smallholding/is-mealworm-farming-profitable"],
-    description: ``
+    sources: ["https://rethinkpriorities.org/publications/insects-raised-for-food-and-feed", "https://bootstrapbee.com/smallholding/is-mealworm-farming-profitable", "https://www.sciencegate.app/document/10.3920/jiff2021.0029"],
+    description: `
+      <p>Mealworms are primarily for consumption, serving as an alternative protein source. Additionally they serve as pet food and animal feed.</p>
+      <p>Insects experience emotions or conciousness in different ways than humans and other animals. Despite that they have shown distress when conditions are not to their liking. This can lead to cannibalism, disease, heat deaths, malnutrition, and behavioral restrictions related to their natural cycles. It's hard to say if this distress is because of mental stress or because of subconcious actions, but distress is distress.</p>
+      <p>The farming of mealworms has less of an impact compared to other animals, simply because of their size. Despite this they still produce a considerable amount of greenhouse gases and ammonia, as well as using a large amount of water.</p>
+    `
   },
   Bee: {
     name: "Bees",
