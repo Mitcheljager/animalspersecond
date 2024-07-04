@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { secondsSinceArrival } from "$lib/stores/time"
+	import { browser } from "$app/environment";
+import { secondsSinceArrival } from "$lib/stores/time"
 	import { bigNumberToWords } from "$lib/utils/number"
 	import RollingNumber from "./RollingNumber.svelte"
 
@@ -14,6 +15,7 @@
   const hourly = $derived(daily / 24)
   const secondly = $derived(hourly / 60 / 60)
   const sinceArrival = $derived(secondly * $secondsSinceArrival)
+  const localeNumber = $derived(Math.round(sinceArrival).toLocaleString("nl-NL"))
 </script>
 
 <a href="/{slug}" class="animal">
@@ -24,7 +26,17 @@
 
     <div>{bigNumberToWords(Math.floor(annually))} per year</div>
     <div>{bigNumberToWords(Math.floor(hourly))} per hour</div>
-    <div class="counter"><span class="underline"><RollingNumber number={Math.round(sinceArrival).toLocaleString("nl-NL")} /> since you got here.</span></div>
+    <div class="counter">
+      <span class="underline">
+        {#if browser}
+          <RollingNumber number={localeNumber} />
+        {:else}
+          {localeNumber}
+        {/if}
+
+        since you got here.
+      </span>
+    </div>
 
     <div class="button">Tell me more</div>
   </div>
