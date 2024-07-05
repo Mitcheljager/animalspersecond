@@ -272,7 +272,11 @@ export const Data = {
     icon: IconFly,
     annually: 200_000_000_000,
     sources: ["https://rethinkpriorities.org/publications/welfare-considerations-for-farmed-black-soldier-flies-hermetia-illucens", "https://rethinkpriorities.org/publications/insects-raised-for-food-and-feed"],
-    description: ``
+    description: `
+      <p>Black Soldier Flies are primarily used as a protein source for animal feed. Often for chickens and pigs, as well as fish farming.</p>
+      <p>Black Soldier Flies generate a large amount of waste that have been known to contaminate the environment if not handled properly. Additionally if not managed properly, these flies can become an invasive species, disrupting local ecosystems. They have been known to transmit certain diseases, especially because they are often fed waste.</p>
+      <p>As with other insects, it's difficult to evaluate the mental well-being of flies. There is little research being done to indicate if they are unhappy in large farms, where they are kept in large numbers. You might assume they have no proper capacity to feel, either emotionally or physically. But even flies have shown to react with distress in situations they don't like. It's hard to say if that's purely a reaction, or if they are actually experiencing anything, but it can not be discredited.</p>
+    `
   },
   Cricket: {
     name: "Crickets",
