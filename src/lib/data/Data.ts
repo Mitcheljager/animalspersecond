@@ -21,6 +21,7 @@ import IconCricket from "$lib/images/cricket.svg"
 import IconMealworms from "$lib/images/mealworm.svg"
 import IconFly from "$lib/images/fly.svg"
 import IconBee from "$lib/images/bee.svg"
+import IconLobster from "$lib/images/lobster.svg"
 
 export const Data = {
   Chicken: {
@@ -316,6 +317,25 @@ export const Data = {
       <p>While bee farming can have positive effects for pollination, large farms bring a lot of trouble. There are over 20 thousand species of bees, only two (the Western honey bee, and the Eastern honey bee) are commonly used for farming honey. Bringing in large amount of bees drives out native species of bees, causing an unbalance in the natural ecosystems. Many of these native species are at risk of extinction. When you buy honey it's good to remember that no matter how well managed and natural the bee farm might be, it has likely caused more harm than good.</p>
       <p>The use of pesticides has meant an even larger decline of wild bees. The pesticides used on farms harm both farmer bees and wild bees. Additionally, intense farming practices lead of degragation of nature, reducing the amount of wild flowers, and reducing the amount of nesting sites for wild bee species.</p>
       <p>Bees are incredibly important as natural pollinators, as such it's important to save the bees. But that means saving all the bees, not just the honey bees.</p>
+    `
+  },
+  Lobster: {
+    name: "Lobsters",
+    slug: "lobsters",
+    category: Category.Ocean,
+    icon: IconLobster,
+    annually: 270_000_000,
+    sources: ["https://www.reportlinker.com/clp/global/4436", "https://www.britannica.com/animal/lobster", "https://animalsaustralia.org/our-work/compassionate-living/6-incredible-lobster-facts/", "https://animalsaustralia.org/our-work/marine-animals/crustaceans-lobsters-octopus-sentient-feel-pain-laws-uk/", "https://www.columbia.edu/~col8/lobsterarticle.pdf"],
+    description: `
+      <h3>How this was calculated</h3>
+      <p>The actual number of Lobsters killed is difficult to get exact. The number is measured in weight rather than number of lobsters. Additionally not all regions publish their numbers. The United States reported 93 million pounds of American Lobster in 2019, Canada reported 100 million in the same year, Australia and New Zealand reported 22 million combined. From here we can extrapolate values for other regions based on estimated consumption. Lobsters vary in weight, ranging between 1 and 5.5 pounds. If we combine global numbers and divide by the weight, we get to roughly 270 million. This is an estimation and actual numbers might vary.</p>
+
+      <h3>Distrupting ecosystems</h3>
+      <p>As with other fish, Lobsters are often caught in the open ocean. Fishing often results in bycatch, where animals other than lobsters are caught unintentionally. This can cause significant harm to local ecosystems as it decreases the population of all fish. Additionally, high demand leads to overfishing, which drastically reduces populations. This doesn't harm just the lobsters, as species are often very interconnected. Many other animals will die as a result of lobsters being wiped out.</p>
+
+      <h3>Lobsters feel pain</h3>
+      <p>It has been proven that lobsters, amongst many other ocean animals (cephalopods and decapods), can feel pain. They are sensitive creatures. They can learn to anticipate and avoid pain, just like many other animals. Unlike other animals, lobsters can't go into shock. When humans are in so much pain they can't handle it, we go into shock, essentially blocking out the pain when it's too great. Lobsters suffer much longer when in pain. This is especially cruel when you realise that traditionally they are boiled alive. They suffer greatly in their final moments.</p>
+      <p>Unfortunately death isn't the only moment they suffer. Lobsters feel great emotional stress as they are taken out of their safe space. When placed in new environments, especially crowded ones, they get very anxious, which might even lead to depression.</p>
     `
   },
 }
