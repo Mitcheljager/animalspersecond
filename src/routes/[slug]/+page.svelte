@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { secondsSinceArrival } from "$lib/stores/time"
 	import { bigNumberToWords } from "$lib/utils/number"
-	import { capitalizeFirstLetter } from "$lib/utils/text";
+	import { capitalizeFirstLetter } from "$lib/utils/text"
 	import { annuallyToSecondly } from "$lib/utils/time"
 	import Header from "../Header.svelte"
 
