@@ -281,7 +281,11 @@ export const Data = {
     icon: IconCricket,
     annually: 400_000_000_000,
     sources: ["https://rethinkpriorities.org/publications/insects-raised-for-food-and-feed", "https://www.businessinsider.com/how-50-million-crickets-harvested-a-week-become-food-2021-4?international=true&r=US&IR=T"],
-    description: ``
+    description: `
+      <p>Crickets are primarily for consumption, serving as an alternative protein and vitamine source, as well as serving as pet food and animal feed. They are also used as fertilizer, which comes from their waste.</p>
+      <p>As with other insects, it's difficult to evaluate the mental well-being of crickets. There is little research being done to indicate if they are unhappy in large farms, where they are kept in tight quarters in large numbers. It's easy to assume they don't have a capacity to feel, and they might not even be able to experience pain. But at the same time they have shown that they react to certain situations. They show distress just like other animals.</p>
+      <p>Insects farming has less of an impact compared to other animals, simply because of their much smaller size. Despite this they still have a considerable environmental footprint, part coming from the farming operations used to manage cricket waste.</p>
+    `
   },
   Mealworm: {
     name: "Mealworms",
