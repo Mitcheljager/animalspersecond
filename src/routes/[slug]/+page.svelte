@@ -22,11 +22,21 @@
 </Header>
 
 <div class="description">
+  <h2>{name}</h2>
   <p>Around {bigNumberToWords(annually)} {name.toLowerCase()} are killed each year.<p>
   {@html description}
 </div>
 
 <style lang="scss">
+  h2 {
+    margin: 0 0 2rem;
+    color: $yellow;
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+
   .description {
     line-height: 1.65em;
 
@@ -34,9 +44,5 @@
       margin: 3rem 0 0;
       color: $yellow;
     }
-  }
-
-  p {
-    margin: 1rem 0;
   }
 </style>
