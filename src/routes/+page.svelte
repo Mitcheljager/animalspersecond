@@ -1,21 +1,23 @@
 <script lang="ts">
 	import type { Animal } from "$lib/types/Animal.d.ts"
-	import { Data } from "$lib/data/Data"
-	import { secondsSinceArrival } from "$lib/stores/time"
-	import { numbersSinceArrival } from "$lib/stores/data"
-	import { secondsToWords } from "$lib/utils/time"
 	import { bigNumberToWords } from "$lib/utils/number"
 	import { Category } from "$lib/data/Category"
 	import AnimalCounter from "./AnimalCounter.svelte"
 	import Header from "./Header.svelte"
+	import Sources from "./Sources.svelte"
+	import { annuallyToSecondly } from "$lib/utils/time"
+	import { secondsSinceArrival } from "$lib/stores/time"
 
-	const animals: Animal[] = sortAnimals()
+	const { data } = $props()
 
-	const sum: number = $derived(Math.floor($numbersSinceArrival.reduce((a, b) => a + b, 0)))
-	const annualSum: number = Object.values(Data).filter(a => a.category === Category.Land).reduce((a, b) => a + b.annually, 0)
+	const animals: Animal[] = sortAnimals(data.animals)
 
-	function sortAnimals(): Animal[] {
-		return Object.values(Data).sort((a, b) => b.annually - a.annually)
+	const numbersSinceArrival: number[] = $derived(animals.filter(a => a.category === Category.Land).map(i => annuallyToSecondly(i.annually) * $secondsSinceArrival))
+	const sum: number = $derived(Math.floor(numbersSinceArrival.reduce((a, b) => a + b, 0)))
+	const annualSum: number = animals.filter(a => a.category === Category.Land).reduce((a, b) => a + b.annually, 0)
+
+	function sortAnimals(data: Animal[]): Animal[] {
+		return data.sort((a, b) => b.annually - a.annually)
 	}
 
 	function filterAnimalByCategory(category: string): Animal[] {
@@ -60,6 +62,8 @@
 <div>
 	<h2 class="statement">Let's be better.</h2>
 </div>
+
+<Sources {animals} />
 
 <style lang="scss">
 	p {

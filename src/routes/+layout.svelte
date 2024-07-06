@@ -1,7 +1,6 @@
 <script>
 	import { browser } from "$app/environment"
 	import { afterNavigate } from "$app/navigation"
-	import Sources from "./Sources.svelte"
 	import "$lib/scss/app.scss"
 
 	afterNavigate(({ from }) => {
@@ -13,8 +12,6 @@
 	<a href="/" class="logo">Animals per second</a>
 
 	<slot />
-
-	<Sources />
 
 	<footer>
 		Contribute on

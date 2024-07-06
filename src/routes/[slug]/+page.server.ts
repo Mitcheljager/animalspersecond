@@ -1,7 +1,7 @@
 import { Data } from "$lib/data/Data"
 import { error } from "@sveltejs/kit"
 
-/** @type {import('./$types').PageLoad} */
+/** @type {import('./$types').PageServerLoad} */
 export async function load({ params }) {
 
 	const animal = Object.values(Data).find((a) => a.slug === params.slug)

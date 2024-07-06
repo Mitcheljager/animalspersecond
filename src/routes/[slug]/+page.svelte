@@ -4,6 +4,7 @@
 	import { capitalizeFirstLetter } from "$lib/utils/text"
 	import { annuallyToSecondly } from "$lib/utils/time"
 	import Header from "../Header.svelte"
+	import Sources from "../Sources.svelte"
 
   const { data } = $props()
   const { name, annually, description } = $derived(data)
@@ -26,6 +27,8 @@
   <p>Around {bigNumberToWords(annually)} {name.toLowerCase()} are killed each year.<p>
   {@html description}
 </div>
+
+<Sources animals={[data]} />
 
 <style lang="scss">
   h2 {

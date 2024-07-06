@@ -6,6 +6,6 @@ export interface Animal {
   category: Category,
   annually: number,
   sources: string[],
-  description: string,
+  description?: string,
   exclude_from_total?: boolean
 }
