@@ -133,12 +133,14 @@ export const Data = {
     category: Category.Land,
     icon: IconSheep,
     annually: 550_000_000,
-    sources: [],
-    description: ``
+    sources: ["https://www.peta.org.au/issues/clothing/cruelty-wool/environmental-hazards-wool-production/", "https://foreverfarms.org/regenerative-sheep-farming/", "https://sentientmedia.org/sheep-farming/", "https://ourworldindata.org/how-many-animals-get-slaughtered-every-day"],
+    description: `
+      <p>Sheep are farmed for a variety of reasons; meat, wool, milk, and leather, primarily.</p>
+    `
   },
   Rabbit: {
     name: "Rabbits",
-    slug: "Rabbits",
+    slug: "rabbits",
     category: Category.Land,
     icon: IconRabbit,
     annually: 1_000_000_000,
