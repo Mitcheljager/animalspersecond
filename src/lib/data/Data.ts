@@ -136,6 +136,10 @@ export const Data = {
     sources: ["https://www.peta.org.au/issues/clothing/cruelty-wool/environmental-hazards-wool-production/", "https://foreverfarms.org/regenerative-sheep-farming/", "https://sentientmedia.org/sheep-farming/", "https://ourworldindata.org/how-many-animals-get-slaughtered-every-day"],
     description: `
       <p>Sheep are farmed for a variety of reasons; meat, wool, milk, and leather, primarily.</p>
+
+      <p>Sheep require large amounts of land, which often times they are not given. Overcrowding leads to stress, which ultimately affects their mental well-being, immune systen, reproduction, and overall health. The confined spaces they are forced to live in lead to boredom and a multitude of behavioral issues, leading to further stress. These tight spaces are a breeding ground for diseases. These diseases often lead to death, either because they are left untreated or because death is quicker and cheaper option. Additionally these diseases can be contracted from sheep to people which can lead to pneumonia and chronic fatigue. To combat these diseases a large amount of antibiotics are used, conttributing an antibiotic resistance in both the animals themselves and the people who eat them.</p>
+
+      <p>Sheep are sheared for their wool. Shearing can be a stressful and painful process. They can suffer cuts and injuries during shearing. In some cases, sheep undergo a practice called mulesing, where strips of skin are removed from around the bottom area to prevent flystrike, a painful condition caused by fly larvae. Mulesing is done without anesthesia, causing significant pain and distress to the sheep. Sheep are also subjected to practices such as tail docking and castration, often without pain relief. These procedures are carried out to manage the flock more easily and prevent certain health issues, but they can cause significant pain and suffering.</p>
     `
   },
   Rabbit: {
