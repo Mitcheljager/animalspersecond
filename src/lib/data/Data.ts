@@ -168,7 +168,7 @@ export const Data = {
     category: Category.Land,
     icon: IconTurkey,
     annually: 650_000_000,
-    sources: [],
+    sources: ["https://worldanimalfoundation.org/advocate/how-many-turkeys-are-killed-each-year/", "https://www.ers.usda.gov/newsroom/trending-topics/turkey-sector-background-statistics/"],
     description: ``
   },
   Goose: {
@@ -177,7 +177,7 @@ export const Data = {
     category: Category.Land,
     icon: IconGoose,
     annually: 700_000_000,
-    sources: [],
+    sources: ["https://avinews.com/en/goose-meat-a-global-perspective/", "https://sentientmedia.org/how-many-animals-are-killed-for-food-every-day/", "https://viva.org.uk/animals/ducks-and-geese/"],
     description: ``
   },
   Goat: {
@@ -186,7 +186,7 @@ export const Data = {
     category: Category.Land,
     icon: IconGoat,
     annually: 450_000_000,
-    sources: [],
+    sources: ["https://faunalytics.org/global-goat-slaughter-statistics-and-charts/", "https://www.mla.com.au/contentassets/c4e69a805b764d17918a4b7a1c97f1c3/global-goat-snapshot-2020-published.pdf", "https://pmc.ncbi.nlm.nih.gov/articles/PMC8127679/"],
     description: ``
   },
   Buffalo: {
@@ -194,8 +194,8 @@ export const Data = {
     slug: "buffalo",
     category: Category.Land,
     icon: IconBuffalo,
-    annually: 24_000_000,
-    sources: [],
+    annually: 4_000_000,
+    sources: ["https://faunalytics.org/global-animal-slaughter-statistics-and-charts/"],
     description: ``
   },
   Camel: {
@@ -204,7 +204,7 @@ export const Data = {
     category: Category.Land,
     icon: IconCamel,
     annually: 3_000_000,
-    sources: [],
+    sources: ["https://veganfta.com/2024/02/24/the-truth-about-exploiting-camels/", "https://www.fao.org/faostat/en/#data/QCL"],
     description: ``
   },
   Pigeon: {
@@ -213,7 +213,7 @@ export const Data = {
     category: Category.Land,
     icon: IconPigeon,
     annually: 45_000_000,
-    sources: [],
+    sources: ["https://animalcharityevaluators.org/research/reports/dietary-impacts/effects-of-diet-choices/", "https://sentientmedia.org/how-many-animals-are-killed-for-food-every-day/"],
     description: ``
   },
   Horse: {
@@ -222,7 +222,7 @@ export const Data = {
     category: Category.Land,
     icon: IconHorse,
     annually: 4_500_000,
-    sources: [],
+    sources: ["https://www.hsi.org/wp-content/uploads/assets/pdfs/Horses_meatproduction_worldwide.pdf", "https://www.hsi.org/news-resources/horse_slaughter_europe/", "https://en.wikipedia.org/wiki/Horse_meat"],
     description: ``
   },
   Deer: {
@@ -231,7 +231,7 @@ export const Data = {
     category: Category.Land,
     icon: IconDeer,
     annually: 10_000_000,
-    sources: [],
+    sources: ["https://worldanimalfoundation.org/advocate/deer-accidents-statistics/", "https://www.iwla.org/publications/outdoor-america/articles/outdoor-america-2016-issue-1/the-dangers-of-too-many-deer", "https://deerassociation.com/wp-content/uploads/2021/03/Final-DR2021.pdf"],
     description: ``
   },
   Dog: {
@@ -240,7 +240,7 @@ export const Data = {
     category: Category.Land,
     icon: IconDog,
     annually: 25_000_000,
-    sources: [],
+    sources: ["https://law.lclark.edu/live/files/23690-21-czajkowskipdf", "https://www.four-paws.org/campaigns-topics/campaigns/end-the-dog-cat-meat-trade/the-truth/the-facts", "https://www.animalsasia.org/intl/our-work/cat-and-dog-welfare/vietnam-ending-the-dog-meat-trade/facts-about-the-dog-meat-trade.html", "https://www.humanesociety.org/blog/2023-fight-end-dog-cat-meat-trade"],
     description: ``
   },
   Rodent: {
@@ -249,7 +249,7 @@ export const Data = {
     category: Category.Land,
     icon: IconRodent,
     annually: 70_000_000,
-    sources: [],
+    sources: ["https://www.tandfonline.com/doi/full/10.1080/19476337.2024.2392886#abstract", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4867788/"],
     description: ``
   },
   Shark: {
