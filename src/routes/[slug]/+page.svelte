@@ -2,7 +2,7 @@
 	import { secondsSinceArrival } from "$lib/stores/time"
 	import { bigNumberToWords } from "$lib/utils/number"
 	import { capitalizeFirstLetter } from "$lib/utils/text"
-	import { annuallyToSecondly } from "$lib/utils/time"
+	import { annuallyToDaily, annuallyToHourly, annuallyToSecondly } from "$lib/utils/time"
 	import Header from "../Header.svelte"
 	import Sources from "../Sources.svelte"
 
@@ -10,7 +10,9 @@
   const { name, annually, description } = $derived(data)
 
   const sinceArrival = $derived(Math.round(annually / 365 / 24 / 60 / 60 * $secondsSinceArrival))
-  const secondly = $derived(Math.round(annuallyToSecondly(annually) * 100) / 100)
+  const daily = $derived(Math.round(annuallyToDaily(annually) * 100) / 100)
+  const hourly = $derived(Math.round(annuallyToHourly(annually)))
+  const secondly = $derived(Math.round(annuallyToSecondly(annually)))
 </script>
 
 <svelte:head>
@@ -24,7 +26,7 @@
 
 <div class="description">
   <h2>{name}</h2>
-  <p>Around {bigNumberToWords(annually)} {name.toLowerCase()} are killed each year.<p>
+  <p><strong>Around {bigNumberToWords(annually)} {name.toLowerCase()} are killed each year.</strong> That is roughly {bigNumberToWords(daily)} per day, or {bigNumberToWords(hourly)} per hour.<p>
   {@html description}
 </div>
 
