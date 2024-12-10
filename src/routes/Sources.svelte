@@ -4,7 +4,7 @@
   export let animals: Animal[] = []
 </script>
 
-<h4>Sources</h4>
+<h2>Sources</h2>
 
 <p><em>Various sources were used for each animal. When numbers differed the average was taken, depending on which most sources seemed to agree on. When ranges were given the lower end of the range was used.</em></p>
 
@@ -19,8 +19,9 @@
 {/each}
 
 <style lang="scss">
-  h4 {
+  h2 {
     margin: $layout-offset 0 0;
+    font-size: 1.3rem;
   }
 
   p {
