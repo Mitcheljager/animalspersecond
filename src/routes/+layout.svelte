@@ -54,7 +54,6 @@
 
 		a {
 			color: $yellow;
-			text-decoration: none;
 
 			&:hover {
 				color: $white;
